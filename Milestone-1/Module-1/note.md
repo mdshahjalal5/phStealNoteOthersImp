@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1</title>
+</head>
+    <body>
+        Video 1 : use of txt.html 
+    Video 2: HTML Hyper(link a chole jai) Markup(structure)
+    Video 3: tags <p></p> <i></i> <b></b>
+    Video 4: <h1 to h6> Headom </h1 to h6> use of seamentic <strong>Meaning</strong> or <b></b>
+    Video 5: <a href=”wher to go”> <a> //** target=_blank</a>
+    Video6:  <img src=”” alt=”alt text” > + folder adding and from internet adding 
+    Video7: list → <ol></ol> <ul>list item <li> </li></ul>
+    Video8: Different type of input tag <input type=”dependent”> <button></button> <br> <hr> 
+    Video9: html structure fav icon title meta
+    Video-10: Summary: 1. Simple tags : <p> h1 h2 --h6 <strong> small <b> <i>
+                2. <img src = “ “>
+                3. <a href = “”>
+                4. <br> </hr>
+                5. Favicon
+                6. Meta 
+                7.doctype html
+</body>
+</html>
