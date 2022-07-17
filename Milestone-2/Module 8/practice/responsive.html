@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive</title>
+    <style>
+      body {
+        max-width: 1240px;
+        margin: 0 auto;
+      }
+      .split-two {
+        display: flex;
+      }
+
+      .split {
+        width: 50%;
+      }
+      .split img {
+        width: 100%;
+      }
+      #lens {
+        width: 100%;
+      }
+      .food-container {
+        width: inherit;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+      .container img {
+        width: 100%;
+      }
+      @media screen and (max-width: 592px) {
+        .split-two {
+          flex-direction: column;
+        }
+        .split {
+          width: 100%;
+        }
+        .food-container {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+      @media screen and (min-width: 593px) and (max-width: 767.98px) {
+        .food-container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- * Always use relative units -->
+    <h1>Responsive Website</h1>
+    <!-- * responsive split screen -->
+
+    <div class="split-two">
+      <div class="split">
+        <!-- * Only image er jonno width 100% hobe bole dite hobe text er jonno lagbe na -->
+        <img src="./image/undraw_barbecue_3x93.svg" alt="" />
+      </div>
+      <div class="split"><img src="./image/60297449_403.jpeg" alt="" /></div>
+    </div>
+    <!-- * Image fluid banalam-->
+    <section>
+      <img
+        id="lens"
+        src="./image/photo-1453728013993-6d66e9c9123a.jpeg"
+        alt=""
+      />
+    </section>
+    <main class="food-container">
+      <div class="container">
+        <img src="./image/undraw_breakfast_psiw.svg" alt="b-fast" />
+        <h1>Item-1</h1>
+        <h4>Price:100</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+          voluptate quae voluptates delectus nihil numquam ullam atque
+          consectetur autem impedit eligendi ducimus quasi maiores ea aliquam,
+          dolores vero similique minima est fuga! Impedit cumque itaque
+          necessitatibus nam voluptatem, assumenda perferendis!
+        </p>
+        <button>Order Now</button>
+      </div>
+      <div class="container">
+        <img src="./image/undraw_breakfast_psiw.svg" alt="b-fast" />
+        <h1>Item-1</h1>
+        <h4>Price:100</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+          voluptate quae voluptates delectus nihil numquam ullam atque
+          consectetur autem impedit eligendi ducimus quasi maiores ea aliquam,
+          dolores vero similique minima est fuga! Impedit cumque itaque
+          necessitatibus nam voluptatem, assumenda perferendis!
+        </p>
+        <button>Order Now</button>
+      </div>
+      <div class="container">
+        <img src="./image/undraw_breakfast_psiw.svg" alt="b-fast" />
+        <h1>Item-1</h1>
+        <h4>Price:100</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+          voluptate quae voluptates delectus nihil numquam ullam atque
+          consectetur autem impedit eligendi ducimus quasi maiores ea aliquam,
+          dolores vero similique minima est fuga! Impedit cumque itaque
+          necessitatibus nam voluptatem, assumenda perferendis!
+        </p>
+        <button>Order Now</button>
+      </div>
+      <div class="container">
+        <img src="./image/undraw_breakfast_psiw.svg" alt="b-fast" />
+        <h1>Item-1</h1>
+        <h4>Price:100</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+          voluptate quae voluptates delectus nihil numquam ullam atque
+          consectetur autem impedit eligendi ducimus quasi maiores ea aliquam,
+          dolores vero similique minima est fuga! Impedit cumque itaque
+          necessitatibus nam voluptatem, assumenda perferendis!
+        </p>
+        <button>Order Now</button>
+      </div>
+      <div class="container">
+        <img src="./image/undraw_breakfast_psiw.svg" alt="b-fast" />
+        <h1>Item-1</h1>
+        <h4>Price:100</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+          voluptate quae voluptates delectus nihil numquam ullam atque
+          consectetur autem impedit eligendi ducimus quasi maiores ea aliquam,
+          dolores vero similique minima est fuga! Impedit cumque itaque
+          necessitatibus nam voluptatem, assumenda perferendis!
+        </p>
+        <button>Order Now</button>
+      </div>
+      <div class="container">
+        <img src="./image/undraw_breakfast_psiw.svg" alt="b-fast" />
+        <h1>Item-1</h1>
+        <h4>Price:100</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+          voluptate quae voluptates delectus nihil numquam ullam atque
+          consectetur autem impedit eligendi ducimus quasi maiores ea aliquam,
+          dolores vero similique minima est fuga! Impedit cumque itaque
+          necessitatibus nam voluptatem, assumenda perferendis!
+        </p>
+        <button>Order Now</button>
+      </div>
+      <div class="container">
+        <img src="./image/undraw_breakfast_psiw.svg" alt="b-fast" />
+        <h1>Item-1</h1>
+        <h4>Price:100</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+          voluptate quae voluptates delectus nihil numquam ullam atque
+          consectetur autem impedit eligendi ducimus quasi maiores ea aliquam,
+          dolores vero similique minima est fuga! Impedit cumque itaque
+          necessitatibus nam voluptatem, assumenda perferendis!
+        </p>
+        <button>Order Now</button>
+      </div>
+      <div class="container">
+        <img src="./image/undraw_breakfast_psiw.svg" alt="b-fast" />
+        <h1>Item-1</h1>
+        <h4>Price:100</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+          voluptate quae voluptates delectus nihil numquam ullam atque
+          consectetur autem impedit eligendi ducimus quasi maiores ea aliquam,
+          dolores vero similique minima est fuga! Impedit cumque itaque
+          necessitatibus nam voluptatem, assumenda perferendis!
+        </p>
+        <button>Order Now</button>
+      </div>
+      <div class="container">
+        <img src="./image/undraw_breakfast_psiw.svg" alt="b-fast" />
+        <h1>Item-1</h1>
+        <h4>Price:100</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+          voluptate quae voluptates delectus nihil numquam ullam atque
+          consectetur autem impedit eligendi ducimus quasi maiores ea aliquam,
+          dolores vero similique minima est fuga! Impedit cumque itaque
+          necessitatibus nam voluptatem, assumenda perferendis!
+        </p>
+        <button>Order Now</button>
+      </div>
+    </main>
+  </body>
+</html>
