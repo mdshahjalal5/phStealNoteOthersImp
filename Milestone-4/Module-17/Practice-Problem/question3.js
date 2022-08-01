@@ -15,12 +15,17 @@ if (numberOne > numberTwo && numberOne > numberThree) {
 
 //? Q(2) You are given a triangle with the sides 9, 8, 9. Write a program to check whether a triangle is Isosceles or not using if-else.
 
-let handOne = 19;
+let handOne = 8;
 let handTwo = 8;
-let handThree = 8;
+let handThree = 9;
 
 if (handOne === handTwo || handOne === handThree || handTwo === handThree) {
-    console.log(`Yes Isosceles`);
+    if(handOne === handTwo && handTwo === handThree){
+        console.log(`Iso na`)
+    } else {
+        console.log(`Yes Isosceles`);
+    }
+    
 } else{
     console.log(`No Isosceles`);
 }

@@ -10,6 +10,11 @@ let fruits = ['Apple','Banana','Orange'];
 // (a) indexOf -> Banana
 console.log(fruits.indexOf('Banana'));
 
+fruits[fruits.indexOf('Banana')] = 'Mango';
+
+console.log(`Mango Added`);
+console.log(fruits);
+
 // (b) remove Orange and add Watremelon
 
 fruits.pop();
