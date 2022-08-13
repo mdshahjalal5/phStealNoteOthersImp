@@ -1,0 +1,21 @@
+.fruits-title {
+  color: blue;
+  font-size: 20px;
+}
+
+.sports-list {
+  border: 1px solid gray;
+  padding: 15px;
+}
+
+.center {
+  text-align: center;
+}
+
+.text-color {
+  color: red;
+}
+
+.big-font {
+  font-size: 50px;
+}

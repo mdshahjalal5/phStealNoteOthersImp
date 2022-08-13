@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-24</title>
+  </head>
+  <body>
+    <!-- ** Video 1 (What is dom, Connect your JS file with html file) -->
+    <!-- ? DOM -> Document object Model -->
+    <!-- ? Pura Html file ta ekta document(ei jonnoi docktype bola hoi) -->
+    <!-- ? ekhon ei html k amra js er moddhe or js theke access korbo -->
+    <!-- ? Js ei pura html document ta k ekta object dhore niye or upor bivinno kaj kore amader interactivity dibe -->
+    <!-- ? Js 2 way the html file a add kora jai script src add kore as an extranal file -->
+    <!-- ? And html er vitor ew sudhu script like raw js likha jai -->
+    <!-- ** Video 2 (Traversing dom - getElementsByTagName) -->
+    <!-- ? How to access an element/or collection of Elements using tag name (getElementsByTagName()-> function provided by the HTML document object) -->
+    <!-- ! Er por amra j html collection of tag name paisi take loop kore tar vitorer mal mosla dekhte parbo using inner.HTML -->
+    <!-- ** Video 3 (Traversing dom - getElementByClass VS getElementById)->
+    <!-- ? Ekta element k pete chaile amra getElementByID("jake pete chai tar id") use korbo -->
+    <!-- ? Jodi kono element na thake or id na thake amader null return korbe -->
+    <!-- ? Jodi amra onekgula eki dhoroner jinish pete chai tahole getElementsByClassName() use korbo -> ja amader alwasys a HTML collection as an array like object return korbe -->
+    <!-- ? Jodi kono element na thake or ekta matro elment or class thake tahole respectively [] empty array like object or [only one element ] diye return korbe -->
+    <!-- ** Video 4(Traversing dom - getElementByQuerySelector, querySelectorAl) -->
+    <!-- ? CSS selectors to get the HTML element -->
+    <!-- ? 1. querySelectorAl("write the elemnet with css selector here") -> get all the elements as static nodelist  -->
+    <!-- ? 2. querySelector() -> get the first element -->
+    <!-- ! Nodelist vs HTML collection -->
+    <!-- ? https://medium.com/@layne_celeste/htmlcollection-vs-nodelist-4b83e3a4fb4b -->
+    <!-- todo 1. HTMLCOLLECTION is live -> means if anything append as chaild it will automatically update -->
+    <!-- ? 2. querySelectorAll() is static if anything added or append it will not show or update -->
+    <!-- ? 3. But if you use chaildNode you can see the append item and the updated state of any html element -->
+    <!-- ? nodelist has several methods like forEach(),keys,values,entries etc -->
+    <!-- ! There are 5 ways to excess an HTML elemnt/elements -->
+    <!-- 1. getElementsByTagName() -> least used one -> returns HTML collection -->
+    <!-- 2. getElementsByClassName() -> returns HTML collection-->
+    <!-- 3. getElementById() -> returns a HTML element only-> 
+        <!-- * CSS Selectors  -->
+    <!-- 4. document.querySelector() -> returns only node only the first element -> live  -->
+    <!-- 5. getElementsByquerySelectorAll()-> returns the node list static -->
+    <!-- ** Video 5 (Dynamic style, getAttribute, setAttribute, innerText, innerHTML) -->
+    <!-- ? kivabe amra bivinno style dite pari kono ekta element k -> how to access the styles -->
+    <!-- ? kivabe amra kono ekta elment er attribute pete pari using getAttribute("jar attribute chai -> class chai -> will give us all the class in out html specified") -->
+    <!-- ? Amra element.classList()-> use korew shob class pete pari -->
+    <!-- ? adding a new class attribute element.classList().add("new class jake add korbo") -->
+    <!-- ? removing a class from classList element.classList().remove('jake remove korbo tar name') -->
+    -->
+    <!-- ? New attribute jog korbo suppose href add korbo element(a tag usualyy bcz href add korbo).setAttribute("href(jeita add korbo seita boshbe eikhane href boshbe, second parameter hisabe tar value dite hobe eikhane href er link)") -->
+    <!-- ? [html collection][0] -> first element take dibe  -->
+    <!-- ? .innerHTML likhle all the htmls inside that elemnt provide korbe including comments (eitake amra chaile chage o kore felte pari) -->
+    <!-- ? .innerText -> sudhu text gula inside an element dibe -->
+    <!-- ? see practice/newDom.js and new.html -->
+    <!-- ** Video 6 (Styling dom properties, add and remove css class using JS) -> manupulation file gula dekhba -->
+    <!-- ? CSS manipulations in using js -->
+    <!-- ? css use kore amra js er shob kisu manipulate korte pari -->
+    <!-- ? This is called css style in js -->
+    <!-- ** Video 7 (NodeList, htmlcollection, parentNode, childnodes, createElement)-->
+    <!-- ? dynamic element creation and add -->
+    <!-- ? 1.nodelist 2.childnode 2.siblingnode 3.parentnode -->
+    <!-- ? createElement and appendChild -->
+    <!-- ** Video 8 (Create HTML elements using Javascript and appendChild) -->
+    <!-- ? See the last video folder -->
+    <!-- ? Kothay new elemnt add kobo i mean kar moddhe or vitore take select korbo -->
+    <!-- ? Ki element add korbo take banabo -->
+    <!-- ? notun element er vitor kisu tahkle tar child hisabe take banabo and appendchild kore take add kore felbo -->
+    <!-- ? er por notun element ta tar banano child gula soho main jinish e apped kore dilei jinish ta hoye jabe banano-->
+    <!-- ** Video 9 ( Module summary (DOM Review))-->
+    <!-- ? -->
+  </body>
+</html>

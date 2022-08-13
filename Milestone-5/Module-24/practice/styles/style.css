@@ -1,0 +1,19 @@
+h1 {
+  color: blueviolet;
+}
+
+li {
+  color: tomato;
+}
+
+#fruits-title {
+  color: black;
+}
+
+#places-title {
+  color: green;
+}
+
+.favorite-places {
+  color: blue;
+}
