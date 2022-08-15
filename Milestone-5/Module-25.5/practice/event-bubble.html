@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Bubble</title>
+    <style>
+      #item-2 {
+        border: 1px solid gray;
+      }
+      #container {
+        border: 1px solid red;
+      }
+      #lits-items {
+        border: 1px solid blue;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <h1>Event Bubble</h1>
+    <section id="container">
+      <ul id="lits-items">
+        <li class="items">Lorem, ipsum dolor.</li>
+        <li id="item-2" class="items">Ad, sunt magni.</li>
+        <li class="items">Voluptatem, quisquam placeat.</li>
+        <li class="items">Ea, ratione fuga.</li>
+        <li class="items">Quia, repudiandae vitae.</li>
+        <li class="items">Vitae, officiis sed?</li>
+      </ul>
+    </section>
+
+    <script>
+      document.querySelector("#item-2").addEventListener("click", (event) => {
+        // event.stopPropagation();
+        // event.stopImmediatePropagation();
+        console.log("item2");
+      });
+      document
+        .querySelector("#lits-items")
+        .addEventListener("click", () => console.log("Ul list"));
+      document
+        .querySelector("#container")
+        .addEventListener("click", () => console.log("Container render "));
+      document
+        .querySelector(".body")
+        .addEventListener("click", () => console.log("body render "));
+    </script>
+  </body>
+</html>

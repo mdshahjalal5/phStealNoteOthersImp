@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM EVENTS</title>
+  </head>
+  <body>
+    <header>
+      <h1>Event of HTML elements using JS</h1>
+    </header>
+    <main>
+      <section>
+        <h2 onmouseover="console.log('my header accessed')">
+          Button selection
+        </h2>
+        <button type="button" onclick="console.log('Hello Buddy Clicked')">
+          <!-- Add onclick event handler directly used here-->
+          Click Me
+        </button>
+
+        <!-- Add onclick event handler directly used here-->
+        <button type="button" onclick="console.log(65)">
+          Add another button
+        </button>
+        <br />
+        <br />
+        <!-- ** System -1  -->
+        <button
+          type="button"
+          onclick="document.body.style.backgroundColor = 'red'"
+        >
+          Red
+        </button>
+        <button type="button" onclick="makeBlue()">Blue</button>
+        <button type="button" id="purple">Purple</button>
+        <button type="button" id="green">Green</button>
+        <button type="button" id="orange">orange</button>
+        <button type="button" id="pink">pink</button>
+        <button type="button" id="goldenrod">goldenrod</button>
+      </section>
+    </main>
+    <script src="../js/event.js"></script>
+  </body>
+</html>

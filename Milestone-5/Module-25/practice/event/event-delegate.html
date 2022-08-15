@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Delegate</title>
+  </head>
+  <body>
+    <h1>Event delegate</h1>
+    <ul id="list-items">
+      <li class="item">Lorem ipsum dolor sit amet.</li>
+      <li class="item">Ab quae ipsa nam rem?</li>
+      <li class="item">Facere, alias soluta? Ab, iure!</li>
+      <li class="item">Nulla expedita doloremque voluptatum? Laudantium!</li>
+      <li class="item">Minima assumenda fuga aliquam iste?</li>
+      <li class="item">Et exercitationem nostrum incidunt. Aperiam!</li>
+    </ul>
+    <button id="btn-add">Add New Item</button>
+
+    <script>
+      //   const items = document.getElementsByClassName("item");
+
+      //   for (const item of items) {
+      //     item.addEventListener("click", function (event) {
+      //       event.target.parentNode.removeChild(event.target);
+      //     });
+      //   }
+      // ** Event Delegate using the Event bubble
+      //   ? So amra jokhon kono kisu add or remove korbo kono element a oitar parent a event listener add korbo
+      document
+        .getElementById("list-items")
+        .addEventListener("click", function (event) {
+          event.target.parentNode.removeChild(event.target);
+        });
+
+      document.getElementById("btn-add").addEventListener("click", function () {
+        const ulContainer = document.getElementById("list-items");
+        const li = document.createElement("li");
+        li.innerText = "Brand New Item Added";
+        ulContainer.appendChild(li);
+        li.classList.add("item");
+      });
+    </script>
+  </body>
+</html>

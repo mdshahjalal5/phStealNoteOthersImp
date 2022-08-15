@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-25</title>
+  </head>
+  <body>
+    <!-- ** Video 1 (What is Event, different types of event in web) -->
+    <!-- ? We can add an event at any HTML elemnet we want -->
+    <!-- ? event mane kono onushtahan hobe mone kori amar mamato vai er bday  -->
+    <!-- ? so js r html er moddhe somporko theke 2 jon mile event ghotay fele -->
+    <!-- ? differnt types of event ase -> kono kisur sapekkhe kono kisu ghothai event -->
+    <!-- ? onclick,onchange,onmouseover, load-> default vabe ghotbe browser nijei korbe and many many more -->
+    <!-- ? amra kono webpage interactivity r jonno or info excess korar jonno dom elemnet er sathe ja kisu korbo everything is event -->
+    <!-- ** Video 2 (Add onclick handler directly or via javascript) -->
+    <!-- ? How we can use or add features in our event handler -->
+    <!-- todo 1. directly writing the functionality in the element event handler ( <button style="button" onclick="console.log('Hello Buddy Clicked')">Click Me</button>) -->
+    <!-- ? 2. extranal function likhe oi function ta event handler er vitor e call kore deya onclick="makePurple()" Important we'll often use this -->
+    <!-- ! 3. jei elemnet a event handler add korbo take id diye dhore tar moddhe event handler add kore functionality dibo id.onclick = function name; don't call here bcz webpage load nile auto load nibe-->
+    <!-- ? 4. same as 3 but eikhane amra just whole function tai likhbo write side a see examples -->
+    <!-- ** Video 3 (Different ways to use addEventListener on a button)-->
+    <!-- ? 5. we can also use htmlelement.addEventListener('kon event er joonno listen kortesi', listen hole ki kaj korbo) -->
+    <!-- ? htmlelement.addEventListener('kon event','function direct')-> most popular we'll use this more often -->
+    <!-- ? const myElement = document.getElementById('')-> jar event handle korbo take dhorbo -->
+    <!-- ? myElement.addEventListener('ki event','ki kaj korbo function') -> function alada likhtew pari abar ei khanew likhte pari  -->
+    <!-- ** Video 4 (Most common ways to set Event Handlers)-->
+    <!-- ? Using the event handlers we'll get the input from input field and display it  -->
+    <!-- ? See the practice -->
+    <!-- ** Video 5 (Create a comment box and display comment) -->
+    <!-- ? ekta text area theke text niye r ekta section er div er vitor paragraph a comment hisabe add kore dibo and last the text area ta clear kore felbo -->
+    <!-- ** Video 6 (Simple github like delete confirmation button) -->
+    <!-- ? Some more events -> 1.mousemove, mouseenter, focus, blur-->
+    <!-- ? Input text er events -> 1.keyup(jodi input field er value dorkar pore amra eita use korbo bcz eita value instant return kore)-->
+    <!-- ? 2. keydown and 4. keypress -> ei 2 ta input field er event but era ekta kore kom value provide kore -> bcz operation pura hoi na -->
+    <!-- ! Make a delete button like github -->
+    <!-- ** Video 7 ((semi-advanced) Event bubble and Stop propagating) -->
+    <!-- ? lets explore how event bubble works -->
+    <!-- ? 1.body vitor -> 2.section vitor -> 3.ul-list vitor 4.list-li (4 ta li ase)  -->
+    <!-- ! ami ekta event handler add korlam (example click add korlam jekono ekta li tag a)  -->
+    <!-- ? jokhoni document er kothaw click hobe browser oita khuje ber korbe (capturing phase) -->
+    <!-- ? erpor oitar event ta execute korbe  -->
+    <!-- (event bubble stage) -->
+    <!-- ? next step a tar uporeer elemnet or parent elemnt a jaba and oikhane kono event handler ase kina ta execute korbe (amader eikhane jodi ul-list,section,body te kono event handler tahkle take execute korbe) -->
+    <!-- This is how event handler works -->
+    <!-- ? amra sudhu amader li item er event tai execute korte chai er uporer element er gula k korte chai na tokhon ki korbo -->
+    <!-- ! tokhon oi element er event ta k dhore bole dibo event.stopPropagation() -->
+    <!-- todo jodi amader same oi element ei onek gula event handler thake and tokhn amra just ekta k chai first one ki korbo -->
+    <!-- ? oi element.stopImmediatePropagation() use korbo -->
+    <!-- ** Video 8 ((advanced) Event delegate and benefit of Event bubble) -->
+    <!-- ? Always add child in the parent -->
+    <!-- **  //   ? So amra jokhon kono kisu add or remove korbo kono element a oitar parent a event listener add korbo see event-delegate.html-->
+    <!-- ** Video 9 (DOM events summary and home work) -->
+    <!-- ? Summary -->
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Handle</title>
+  </head>
+  <body>
+    <section>
+      <p id="myParagraph">Default paragraphs</p>
+      <input type="text" id="input-text" />
+      <br />
+      <br />
+      <button id="input-button">Input Button</button>
+    </section>
+    <h1>Input Handlers</h1>
+    <p id="default-text">Default Text</p>
+    <p id="event-listener">My default event listener</p>
+
+    <button type="button" onclick="buttonHandler()">
+      Default Text changer
+    </button>
+
+    <button type="button" id="event-button">Change the Event listener</button>
+    <script src="../js/input-handle.js"></script>
+
+    <script>
+      // Option-1
+      const buttonHandler = () => {
+        document.getElementById("default-text").innerText = "I'm Changed";
+      };
+
+      //   ** Option-2
+
+      document
+        .getElementById("event-button")
+        .addEventListener("click", function () {
+          document.getElementById("event-listener").innerText =
+            "Updated Event Listener";
+        });
+    </script>
+  </body>
+</html>

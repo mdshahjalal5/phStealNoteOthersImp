@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github delete btn</title>
+  </head>
+  <body>
+    <input type="text" id="delete-text" placeholder="Please enter delete" />
+    <button id="delete-btn" type="button">Delete</button>
+    <script>
+      //   document
+      //     .getElementById("delete-btn")
+      //     .addEventListener("mousemove", function () {
+      //       console.log("delete");
+      //     });
+      //   document
+      //     .getElementById("delete-btn")
+      //     .addEventListener("mouseover", function () {
+      //       console.log("delete");
+      //     });
+      document
+        .getElementById("delete-btn")
+        .addEventListener("mouseenter", function () {
+          console.log("delete");
+        });
+      document
+        .getElementById("delete-text")
+        .addEventListener("focus", function () {
+          console.log("Im focused");
+        });
+      document
+        .getElementById("delete-text")
+        .addEventListener("blur", function () {
+          console.log("Im blured triggered");
+        });
+    </script>
+  </body>
+</html>
