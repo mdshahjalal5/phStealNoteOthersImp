@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-31</title>
+  </head>
+  <body>
+    <!-- ** Video 1 (Module Introduction and Basic ES6 Recap) -->
+    <!-- ** Recap prior Module -->
+    <!-- ** Video 2 ( Access Value, nested object Optional chaining)-->
+    <!-- ? how to access the nested array and object s inside value by chaining  -->
+    <!-- ? And the optional chaining (?) -> ?. dot er age ? question sign use kore optional chaining korte hoi  -->
+    <!-- ? (?) -> er mane kono object e data oi porjonto jodi thake tahole samne agabe na hoi samne agabe na -->
+    <!-- ** Why we need optional chaining-->
+    <!-- ? sometimes database cann't provide some data and this sort of things happen so that we can check that and make sure our programme is running without any error we need optional chaining to be in the flow -> so that it won't stop the programme rather returns an undefined -->
+    <!-- ** Video 3 ( Array map to do one line loop magic) -->
+    <!-- ? Map holo array method  -->
+    <!-- ? arr.map(()=>{}) -> array er protekkta upadan er moddhe diye jabe and ekta operation korbe/ or ekta kaj korbe as the callback function(sei kaj ta korbe) -> oi callback function ja return korbe ta ekta array er moddhe rekhe return kore dibe -->
+    <!-- ! array.map(()=> {}) -> callback function e kaj korar por obossoi ekta arry return korbe  -->
+    <!-- ? array.map((eachArrayElement,index,arrayItSelf)=>{}) -->
+    <!-- ** Video 4 ( Map string array, array of objects map, foreach) -->
+    <!-- ? Map (arr.map(elementArray)=> {kaj karbar}-> map prottekta element er moddhe diye jai and ekta operation kore then oitar value k ekta newArray er moddhe rekhe return kore oi array k) -> return kore ekta new array -> don't modify the original array -->
+    <!-- ? arr.forEach(arrElement => prottek upadan er moddhe diye jai and operation chalai but kono kisu return kore na -> return kore undefined)  -->
+    <!-- ** Video 5 (Implement filter, find on an array of objects) -->
+    <!-- ? arr.filter(()=>{ ei jaigai ekta sorto dite hoi array er j j element oi sorto puron korbe tader ekta array te niye filter ta return korbe})  -->
+    <!-- ? arr.find(()=>{ei khane ekta sorto dibo array er first j element ta sorto puron korbe find take return korbe -> only return that element not an array}) -->
+    <!-- ** Filter Vs Map -->
+    <!-- const numberGreaterThanthirty = (numbers)=> numbers.filter( number => number > 30 ); // filter method sorto je je element puron kortese take ekta array te dhukhai ta final result hisabe return kortese console.log(numberGreaterThanthirty(numbers)); const numberGreaterThanthirtyMap = (numbers)=> numbers.map( number => number > 30 ); // jokhon ma use kortesi tokhon map sorto puron hole true false passe and take ekta array te moddhe niye ta return kortese console.log(numberGreaterThanthirtyMap(numbers)); -->
+    <!-- ** See Example -->
+    <!-- ** Video 6 ((optional) Explore Reduce and Dot notation) -->
+    <!-- ? array.reduce((previousValue/accumulator,currentValue,currentIndex,array)=>{},initialValue) -> array.reduce() -> er kaj holo array er sob upadan diye kono ekta kaj kore finally ekta value return kora -> catch -> eikhane array.reduce()-> array er vitor thaka shob element k kaje lagabe -->
+    <!-- ** dot notation vs bracket notation -->
+    <!-- ? 1. dot notation is faster but it has some limitation -->
+    <!-- ? 2. dot notation cann't use dynamicallay see example -->
+    <!-- ? 3. In dot notation in order to excess the object pros the naming of props can be a consideration see the slide link provided by programming hero -->
+    <!-- ** Video 7 ((semi-advanced) Class, constructor, method, create object from class) -->
+    <!-- ? Class -> holo ekta blueprint -> jokhon similar pattern er kono object or onek gula object amader lagbe amara class use korbo-->
+    <!-- ? class amader ekta structure dibe -> oi sache fele amra notun notun object or jinish banabo  -->
+    <!-- ? suppose amader vapa pitha bananor bati ase ta same shape er object i mean vapa pitha return korbe -->
+    <!-- ? Notun object banate hole obossoi new keyword diye calss k invoke korle ta notun object ta ja tar blueprint a fele banay return korbe -->
+    <!-- ** Video 8 ((advanced) Inheritance, extends class, super, class method) -->
+    <!-- ? What is prototypical inheritance in js? -->
+    <!-- ? Every class has properties and methods inside it to make objects beside these it has another hidden feature or an internal thing known as [[prototype]] -->
+    <!-- ! ei prototype ki kore -> ei prototype onno object er methods and properties chain er moto kore access korte pare -> ei jinish ta kei prototypicall inheritance bole -> parent element er properties and methods child class gula prototypicall chain er maddhome access pai-->
+    <!-- ** Every object with its methods and properties contains an internal and hidden property known as [[Prototype]]. The Prototypal Inheritance is a feature in javascript used to add methods and properties in objects. It is a method by which an object can inherit the properties and methods of another object. Traditionally, in order to get and set the [[Prototype]] of an object, we use Object.getPrototypeOf and Object.setPrototypeOf. Nowadays, in modern language, it is being set using __proto__.  -->
+    <!-- ? super() -> call kore parent class er instructor function k call kora hoi from the childs instructor function  -->
+    <!-- ? extends use kore ekta class k onno class inherite korte pare -->
+  </body>
+</html>
