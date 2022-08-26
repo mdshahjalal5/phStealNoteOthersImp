@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-32</title>
+  </head>
+  <body>
+    <!-- ** Video 1 ( How does internet work and What is an API) -->
+    <!-- ? How does internet work? -->
+    <!-- ** When a user or clien write a domain name in the browser -> it request the DNS server to get the ip address of that domain -->
+    <!-- ? Once it got the ip address it request the data center to get the data it needed upon checking the validation in the server the data center give the data in form of packtes-->
+    <!-- todo What is an API? -->
+    <!-- ** API -> Application Programming Interface -->
+    <!-- ? api holo ekta messenger ja client er kas theke request niye server er kase jai and request er sappekkhe server theke response niye abar client k return kore  -->
+    <!-- ? ekta resturant er waiter er moto customer er kase order nitye waiter kitchen a jai and food niye customer k serve kore -->
+    <!-- ** Video 2 (Intro to JSON, JSON Structure, parse, stringify) -->
+    <!-- ? 2 things 1.JSON.stringyfy 2.JSON.parse  -->
+    <!-- ? javaScript er jekono kisu k niye jodi amra JSON string or in a JSON format a pete chai amra JSON.stringfy(javaScript er j jinish k amra JSON banate chai ta) -->
+    <!-- ? Abar JSON string ase amader kase amra js object pete chai ki korbo just JSON.parse(jake js object banano sei JSON string) -->
+    <!-- ** Video 3 (JSON placeholder, GET data, display data on UI) -->
+    <!-- ? fetching the data from server datacenter -->
+    <!-- ? fetch("url")
+            .then(response => response.json())
+            .then(json => console.log(json))
+    -->
+    <!-- ** Video 4 ( Load more data, more APIs, send data to function) -->
+    <!-- ? Load user data -->
+    <!-- ** Video 5 (Dynamically display loaded data on your website) -->
+    <!-- ? creatre a unordered list where add the usernames as the list items-->
+    <!-- ** Video 6 (Load posts and display on the website with CSS)-->
+    <!-- ? get the post data and display then in a html-->
+    <!-- ** Video 7 (GET, POST, PATCH, DELETE, CRUD, GET Vs POST)-->
+    <!-- ? Normal fetch("") amader data get kore server theke client k data dei -->
+    <!-- ? fetch("",{
+        method:"POST",
+        headers:{"Content-Type: application/json"},
+        body:JSON.stringyfy({
+            name:"foo",
+            title:"bar"
+        })
+
+    }) -> post will create a new data in the datacenter by requestiong the server and give a feedback response to the user in return -->
+    <!-- ?  fetch("",{
+        method:"PATCh",
+        headers:{"Content-Type: application/json"},
+        body:JSON.stringyfy({
+            name:"foo",
+            title:"bar bar patch"
+        })
+
+    }) -> patch existing data k change kore dibe so update korbe -->
+    <!-- ?  fetch("",{
+        method:"PUT",
+        headers:{"Content-Type: application/json"},
+        body:JSON.stringyfy({
+            name:"foo",
+            title:"bar char nar " // updated the existing data as well,
+            userId:101, // new id create ja age silo na
+        })
+
+    }) -> PUT existing data k update korbe and ja change korte chasse ta jodi na thake se notun kore datacenter a create korbe -->
+    <!-- ** fetch("",{
+        method:"DELETE"
+    }) -> self explanatory delete the url corresponding data provided on the fetch -->
+    <!-- ** Video 8 (Debug API, Network tab,Status code, headers, bad API) -->
+    <!-- ? Debugging and network tab -->
+    <!-- ** Video 9 ( Module Summary and two homeworks) -->
+    <!-- ? -->
+  </body>
+</html>
