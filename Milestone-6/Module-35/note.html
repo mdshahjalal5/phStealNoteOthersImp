@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-35</title>
+  </head>
+  <body>
+    <!-- ** Video 1 (Module introduction Different way to Create Object) -->
+    <!-- ? There are 5 ways  to create an object  -->
+    <!-- ? 1. Object literals -> const person = {name:'Abul Vai'} -->
+    <!-- ? 2. object constructor  -> const person = new Object() -> will create an empty object for us -->
+    <!-- ? 3. Constructor function -> const person = function(name,age){
+        this.name = name;
+        this.age = age
+    }
+    const Abul = new person('Abul',72);
+-->
+    <!-- ** 4. ES6 class -> class{
+    this.name = 'Abul',
+    constructor(age){
+        this.age = age
+    }
+} -->
+    <!-- ** 5. Object.create() -> to make prototypical chaining -->
+    <!-- const person1 = {
+    name:"jhon Doe"
+} -->
+    <!-- ? const person2 = Object.create(person1) -> it will make an object of person2 but it will inherit the keys and values of person1 object -->
+    <!-- ** Video 2 (Object method access and set property values) -->
+    <!-- ? ekta object er vitor ki ki type er properties set kora jai as value-->
+    <!-- ? 1. string 2.Number 3. Boolean 4. method 5.array 6.object-->
+    <!-- ?Object er vitor function set kora jai tokhon oita k method bole -->
+    <!-- ? function er vitor object er kono ekta props pete chaile amra this keyword use kore access korbo amra eki vabe method kew access korte pari -->
+    <!-- ** Video 3 ( Keys, values, entries, delete, seal, freeze) -->
+    <!-- ? Object.keys(object) -> return array of keys -->
+    <!-- ? Object.values(object) -> return array of values -->
+    <!-- ? Object.entries(object) -> return array of [[key,value],[key,value]] -->
+    <!-- ? delete.object.props -->
+    <!-- ** object.seal(object) -> we can only modify the existing object properties value but no add no delete -->
+    <!-- ** object.freeze(object) -> we can not modify the existing object properties value but no add no delete -->
+    <!-- ** Video 4 ( Loop through an object using for in, for of, object entries) -->
+    <!-- ? loop through an object 3 ways to get the props value -->
+    <!-- ! 1. Object.keys(obj) -> array of keys[] pabo -->
+    <!-- ? er por array of keys k for of kore key gula alada kore nibo and object[keys] -> bracket notation a as variable pass korlei value peye jabo -->
+    <!-- ** 2. We'll use this -> for in loop korle object keys gula k dibe amader er por just object[keys] = value peye jabo -->
+    <!-- todo 3. Object.entries(obj) -> [[key,value]] -> pabo -->
+    <!-- ? Object.entries(obj)-> for of marle protita [key,value] k destructure kore dhore felbo and show korbo  -->
+    <!-- ** Video 5 ((advanced) Compare objects, referential integrity) -->
+    <!-- ? Jokhon amra object1 === object2 compare korbo tokhon tader refference value different howar jonno tara same hobe na tai tader check korar jonno kisu system ase -->
+    <!-- ** Abar jodi amra object1 = objjet3 kori and ekhon jodi object1 === object3 compare kori tahole tara same hobe -->
+    <!-- ? ekta compare korar system but don't use its not relaible JSON.stringyfy(obj) -> object ke stringyfy korbo kore eder check korbo but same jinish tahlew order ulta palta thakle different ashbe  -->
+    <!-- ? comapre korbo using keys -> eita ekta system but deep checking er jonno kisu library ase and google a code ase ogla diye korte hobe -->
+    <!-- ** Video 6 ((optional) Borrow method from object and use it on another object) -->
+    <!-- ? Onno object er method r ekta object a use korar system 3 ta -->
+    <!-- ? 1. call -> object1(kar theke method borrow korbo se).method(ki method borrow korbo seita).call(je object ta method borrow kortese se, jodi kono parameters thake ta) -->
+    <!-- ? 2. apply -> object1(kar theke method borrow korbo se).method(ki method borrow korbo seita).apply(je object ta method borrow kortese se, [jodi kono parameters thake take as array er vitor dite hobe]) -->
+    <!-- ? 3. bind -> Notun ekta function create kore function = object1(kar theke method borrow korbo se).method(ki method borrow korbo seita).bind(je object ta method borrow kortese se) -->
+    <!-- ** Ekhon uporer function call korar time a just parameters thakle pass kore diba -> myFunc(parameters eikhane) -->
+    <!-- ** Video 7 ((super advanced) Understand this keyword in JavaScript) -->
+    <!-- ? this -> normal method a object er vitor hole this oi object k bujhay but ei jinish tai arrowMethod hole this bolte window k bujhay -->
+    <!-- ? html dom a kono button k onclick a this metion korle ta window object ke bujhay -->
+    <!-- ? but jodi oi button keu addEventListerner diye click handler add kora hoi tahole this bolte oi element ta kei bujhay -->
+    <!-- ? erokom this er ro confusing jinish potro ase vininno jaigay bivinno egla aste aste bujhte hobe -->
+    <!-- ** Video 8 ( Module summary and checklist) -->
+    <!-- ?  -->
+  </body>
+</html>
