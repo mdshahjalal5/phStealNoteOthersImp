@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-37</title>
+  </head>
+  <body>
+    <!-- ** Video 1 (Module Introduction and how the internet works) -->
+    <!-- ? How internet works -> Client(browser-> go to a website) -> this request go to a Domain Name Server(Domain Name resolve kore ekta ip address a convert kora er kaj) -> er por oi website er ip address diye or data j server a ase oitar access kore tar request er result abar client er kase pathay dey. -->
+    <!-- ? browser-DNS-server(where the website hosted) -->
+    <!-- ** client or browser jokhon request kore tokhon server jeta thake oita oi request checking and process kore datacenter theke data packet akare client k abar send kore -->
+    <!-- ** Video 2 (Simple overview of HTTP and HTTPS) -->
+    <!-- ? Http -> hyper text transfer protocol -> data are not encrypted stored as plain text , not secure -->
+    <!-- ? Latest -> https -> hyper text transfer protocol secure -> both encryption and decryption are possible so that hackers can't see the data as plain text rather they saw it as encrypted data  -->
+    <!-- ** https://www.keycdn.com/blog/difference-between-http-and-https -->
+    <!-- ? ssl -> https://www.websecurity.digicert.com/security-topics/what-is-ssl-tls-https (secure socket layer)-->
+    <!-- ? caching in web apis https://developer.mozilla.org/en-US/docs/Web/API/Cache -->
+    <!-- ?  load balancing -> https://thecodebarbarian.com/building-your-own-load-balancer-with-express-js.html -->
+    <!-- ? protocol -> The protocol is a standard that specifies how data are transmitted between computers. -->
+    <!-- ** Video 3 (How Browser works, DOM tree, Render Tree) -->
+    <!-- ? Html -> html perser -> dom tree -> attachment  -->
+    <!-- ? css -> css perser -> css style structure tree -> attachment  -->
+    <!-- ! attachment -> render tree (eita wesite er layout ki rokom hobe ta thik kore -> like navbar koi boshbe -> padding koto tuku hobe footer koi thakbe  ) -->
+    <!-- ? er por render tree -> paint -> display -->
+    <!-- ** Video 4 (JavaScript Engine V8 Internal mechanism) -->
+    <!-- ? Js in browser runs with the help of v8 Engine -> which is written in c++ (bcz this v8 convert the js code to machine readable code) -->
+    <!-- ** V8 Engine also consist of JIT (Just in time compailer) -->
+    <!-- ? js is a interpreted highlevel language ->  -->
+    <!-- ? compailed language oenk ta lau khawar moto -> ranna kore process kore khawa -->
+    <!-- ? interpreted language holo apple khawar moto -> line by line execute hoi -->
+    <!-- ! How js works in browser using v8 Engine -->
+    <!-- ** defer and async code (parellal execution) -->
+    <!-- ** Also slightly differently node js use v8 engine to interpreted js in a server -->
+    <!-- ** Video 5 (Asynchronous vs Synchronous and promise) -->
+    <!-- ? Synchronous code -> line by line execute hoi (ektar por ekta -> ektar upor r ekta dependent ) -->
+    <!-- ? asunchronous code -> line by line execute hoi na as the name suggested -> (setTimeOut(()=>{},2000))-> execute hoi but 2 s por But er jonno onno jegla js code ase ora boshe thakbe na rather they will execute themselves -->
+    <!-- ** How the fetch works bujhle motamuti async er kaj karbar amra bujhte parbo -->
+    <!-- ** fetch('https://jsonplaceholder.typicode.com/todos/1')
+  .then(response => response.json())
+  .then(json => console.log(json)) 
+        console.lag('sync')
+-->
+    <!-- ** at first js code run korar somoy sync js first a dekhe fetch method call kora hoise  -->
+    <!-- ? tokhon se fetch er vitor a thaka url a hit kore -> api te jai -> eita ekta async process ta 2 ta jinish return kore as promise hisabe -> 1.reject na hoi 2.resolve -->
+    <!-- ? in between sync code boshe na theke already run kore execute hoye jai like amader upoerer code tai console.lag('sync') part ta dei -->
+    <!-- ? amader fetch kora api request execute hoile amra resolve pele er por er line a resolve promise  ta abar json() -> parser er kase jai json to js object a convert korar jonno and promise orthat reject or resolve return kore  -->
+    <!-- ? er por abar ekta promise resolve korar moddhe diye amader uporer function ta data ta return kore -->
+    <!-- ! uporer function ta jodi reject return kore tahole amra sorasori as error catch a peye jai -->
+    <!-- ** Video 6 (setInterval and clearInterval with x++ and ++x) -->
+    <!-- ? setTimeOut() -> async function execute after a time duration but only once -->
+    <!-- ? setInterval() -> async function execute multiple time until any stopping clearInterval() -> executes after a time delay -> time delay por por hoitei thakbe ek er por ek  -->
+    <!-- ! clearInterval() and clearTimeout() -> use to stop the or clear the async functions -->
+    <!-- ** let count = 0 -->
+    <!-- ** setInterval(()=>{
+        console.log(count++) -> ei line a first jokhon execute korbe first man thakbe 0 and console korbe 0 , er por man baray next line execute korte jabe
+    },500) -->
+    <!-- ** setInterval(()=>{
+        console.log(++count) -> ei line a first jokhon execute korbe first man thakbe 1 and console korbe 1 bcz first a man barabe then console korbe
+    },500) -->
+    <!-- ** Video 7 ( JavaScript event loop and concurrency) -->
+    <!-- ? event-loop jinish ta kivabe ashlo ? -->
+    <!-- ? we know js holo single threaded interpreted language -> eita ektar por ekta eki path a code execute kore -->
+    <!-- ? tahole eita kivabe async kaj karbar k manage kore  -->
+    <!-- ? ei j js tar single threaded er moddhe async and sync k manage korar jonno event-loop name a ekta jinish use kore -->
+    <!-- ? ei event-loop er vitor 3 ta jinish thake -> 1.heap(memory) 2.stack(Micro stack) 3. queue(Macro stack) -->
+    <!-- ? event-loop a Micro-stack or stack er kaj age hoi sync kaj gula -> ei khetre first line of console.lag(11111) sobar age ashe and stack er sobar upor e chole jai and execute hoi er por second console.lag(22222) ase and execute hoye chole jai  -->
+    <!-- ? sync kaj sesh holey async kaj er jonno js queue theke 1st oppekkhoman async kaj sompadon kore  -->
+    <!-- ? eivabei event-loop kaj kore -->
+    <!-- ** Video 8 (module summary and interview questions) -->
+    <!-- ? Interview Question ->https://drive.google.com/file/d/1qkmv3gDJQ8JhemlaCRWidiTjRno3kj15/view  -->
+    <!-- ******* -->
+    <!--** this is a very good article everything is explained there https://medium.com/jspoint/how-javascript-works-in-browser-and-node-ab7d0d09ac2f -->
+    <!-- ** Js raw code -> parser(baseline compiler) -> bytecode a convert kore perser or the baseline compiler -> interpreter -> interpreter converted it to binary code and it then will reads by the cpu  -->
+  </body>
+</html>
