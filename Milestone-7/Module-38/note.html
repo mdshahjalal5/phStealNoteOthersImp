@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-38</title>
+  </head>
+  <body>
+    <!-- ** Video 1 (Module Overview, BOM vs DOM, Browser API) -->
+    <!-- ? window object -->
+    <!-- ? DOM and BOM and JS are the subset of the window object -->
+    <!-- ? BOM- Browser object model  -->
+    <!-- ? In order to work with the js browser creates a model of that like DOM using BOM but it has no standard -->
+    <!-- ? window.body.contentEditable = true -> you can edit the content of the web page you are in -->
+    <!-- ? chrome://settings/ -> to go to the chrome s setting tab-->
+    <!-- ? chrome://new-tab-page/ to go to the new tab -->
+    <!-- ? chrome://restart/ to make the restart of the chrome browser -->
+    <!-- ** Browser api or web api list -> https://developer.mozilla.org/en-US/docs/Web/API -->
+    <!-- ** Both the BOM and DOM part of the window object(subset) (each tab is different window object)-->
+    <!-- ** Video 2 (Browser alert, confirm, prompt with examples) -->
+    <!-- ? 3 types of pop-up boxes browser provide us (there are part of the browser api) -->
+    <!-- ** 1. alert("J alert ta tmi user k korte chaw, just ekta dialog open hobe") -> alert box -->
+    <!-- ? 2. confirm box -> confirm('Are you ready to go to the picnic') -> ok or cancel -> ok hole true return korbe r cancle korle false return korbe -->
+    <!-- ? kono ekta value truthy kina check korar system holo !!value -> true or false return korbe -->
+    <!-- ? 3. prompt -> prompt('Picnic a jabo Bkash amount minimum', 2000 ) -> 2000 set as default paremeters -->
+    <!-- ** Video 3 (Location, URL parts, query string, href, hash, assign, reload) -->
+    <!-- ** address bar -->
+    <!-- ? (1)https://(2)web.(3)example.org:(4)8080/(5)foo/bar?(6)q=baz(7)#bang -->
+    <!-- todo 1. Hypertext transfer protocal -> encripted and decrypted  -->
+    <!-- ? 2. sub-domain -->
+    <!-- ? 3. domain (host name) -->
+    <!-- ? 4. port number -->
+    <!-- ? 5. file path  -->
+    <!-- ? 6. query/search string -->
+    <!-- ? 7. Hash -->
+    <!-- ** kono loaction change korte ki ki use korbo -->
+    <!-- ? 1. window.loaction === document.loaction -> both location object refers the same memory address so it returns true -->
+    <!-- ? 2. inside location object there are tons of properties avaiable -->
+    <!-- ? 3. location.assign()f -> which will keep the loaction history and will assign from the current page to the new one   -->
+    <!-- ? 4. location.replace() -> which will replace the current page with the new one but will not keep the history-->
+    <!-- ? 5. location.href = "" -> will navigate us to the new page while keeping the history -->
+    <!-- ** location.toString() -> will give you the url as string -->
+    <!-- ? location.reload() -> use to reload the web page -->
+    <!-- ** Video 4 (History api to navigate back, forward, go, history length) -->
+    <!-- ? Browser's history api  -->
+    <!-- ? 1. window.history === history -> returns true -->
+    <!-- ** document.history === window.history returns false -->
+    <!-- ? 2. to go to the forword page -> history.forward() -> ek page samne jabe -->
+    <!-- ? 3. to go to the back page -> history.back() -> ek page pisone jabe -->
+    <!-- ** 4. history.go() -> kisu na dile or 0 dile current page reload korbe -->
+    <!-- ** 4. history.go(-1) -> ek page pisone jabe -->
+    <!-- ** 4. history.go(-3) -> 3 page pisone jabe -->
+    <!-- ** 4. history.go(+1) -> 1 page samne jabe -->
+    <!-- ** 4. history.go(+4) -> 4 page samne jabe -->
+    <!-- ** history.length -->
+    <!-- ** Video 5 ( Cookies, dev tool application tab, get cookie value) -->
+    <!-- ? cookie -> Browser kisu user info and others info as text cookie te songrokkhon kore rakhe -->
+    <!-- ? jokhon kono server browser er ei info access korte chay tokhon bivinno dhoroner cookie access permission chay and access kore -->
+    <!-- ? secure cookie holo http only cookies -->
+    <!-- ? browser er web api er ekta jinish holo cookie so browserr sara access kora jabe na  -->
+    <!-- ? to aceess the cookie in browser use the application tab or the document.cookie script -->
+    <!-- ** Video 6 ( local storage, session storage, storage info in browser storage) -->
+    <!-- ? Session storage and local storage store data in key:value pair  -->
+    <!-- ? Difference -> session sesh hole session storage er value chole jabe automatically -->
+    <!-- ? But local storage a kono value set korle ta browser or session sesh korlew theke jabe like the volume of youtube mute korar purbe jei jaigai silo unmute korle oi jaigay e chole jabe abar -->
+    <!-- ** Both local storage and session storage a data string hisabe store kora thake -->
+    <!-- ? to access the item we use localStorage.getItem() / jodi as object value pete chai amra JSON.parse() kore as js object data pete pari -->
+    <!-- ? to set the item we use localStorage.setItem() / Jodi as string data rakhte hobe so amra JSON.stringyfy() kore data rakhbo -->
+    <!-- ** Video 7 (Set and read Simple value from local, session storage) -->
+    <!-- ? Accessing local storage -> see practice -->
+    <!-- ** Video 8 (Implement Local Storage Interactions for a shopping Cart) -->
+    <!-- ? Make a shopping cart and store the product and quantity in the localStorage -->
+    <!-- ** Video 9 (Store and Retrieve Object to Local storage) -->
+    <!-- ?  -->
+  </body>
+</html>
