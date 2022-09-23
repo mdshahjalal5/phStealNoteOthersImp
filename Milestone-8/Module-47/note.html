@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-47</title>
+  </head>
+  <body>
+    <!-- ** Video 1 (Module Introduction Create React App under the hood) -->
+    <!-- ? npm -> node package manager -->
+    <!-- ? node -> something very similar to js -> or the v8 engine  -->
+    <!-- ? node can understand and run the js -->
+    <!-- ? Amader js er kono application bananor jonno onek gula dependecies or jinish lage  -->
+    <!-- ? ei shob gula jinish package akara node er server a upload kora thake  -->
+    <!-- ? amra amader proyojon moto ogla k cli -> command line interface diye deke ene amader project a use korbo -->
+    <!-- ? npx -> node package executable -->
+    <!-- ? why npx -> before npm amader prottek ta package npm diye install kore execute kora lagto -->
+    <!-- ? But npx oi package cli te dhore ene ek line a execute kore dei -->
+    <!-- ? create-react-app -> npm -> node package manager e thaka react app bananor ekta package -->
+    <!-- ? ei create-react-app er moddhe react chalanor shob dependencies thake ekta package hisabe amra just install korbo and chalabo -->
+    <!-- ? npm theke j create-react-app ta anlam oita start or chalanor jonno create-react-app kisu command diye dei exaple-> npm start,npm build,npm test and npm eject  -->
+    <!-- ? create-react-app package er sathe ei jinish gula ashe and egla thake package.json folder a -->
+    <!-- ? create-react-app folder structure ki rokom hobe oi package er oitaw bole dei -->
+    <!-- ? readme.md -> kono application kivabe chalate hobe ki ki dependencies ase oi shob end user j software ta customise kore use korbe take bole dibe -->
+    <!-- ? eslint -> code likha thik ase kina oita dekhbe, pattern thik ase kina linting -> Linting is the automated checking of your source code for programmatic and stylistic errors-->
+    <!-- ** create-react-app a test.js ase testing korar jonno  -->
+    <!-- ? git ignore -> vital info hide korbe ja amra github a pathate chaina -->
+    <!-- ? index.js -> react app.js e shob kisu kore virtual dom kore react component update kore lastly ekta jaigai html dom er sathe inject or code marge kore oita holo inde.js , ei khane ekta final react element create hoi and ei final ta html dom a dhukay dei -->
+    <!-- ? ja html root a render hoi -->
+    <!-- ** <noscript> -> kono browser a js enable na thakle eita message show korbe enable js to use react in the browser -->
+    <!-- ? react oi root html file js inject korar jonno behind the scene a ekta /static/js/bundle.js script inject kore dei js html er dom er sathe chalanor jonno  -->
+    <!-- ? package.json vs package.lock.json ->  -->
+    <!-- ? package.json stores the metadta of the npm's package it can be multiple packages -> it stores the author, dependencies scripts etc -->
+    <!-- ? package.lock.json() automatically created when the package.json created what's the purpose -->
+    <!-- ? in different environment the project dependencies can change and not work as expected so the the package.lock.json locks the dependencies in order to work exactly as expected in every environment -->
+    <!-- ** Video 2 (What is JSX, React Component, babel transpiler) -->
+    <!-- ? JSX -> fundamentally jsx provides syntactical suger for the React.createElemet(component(built-in or self made),{props},..children) function  -->
+    <!-- ? Why JSX -> every time we run any jsx in out react code this executes the above mentioned function but it provides a html like easy to understand code and cleaner code  -->
+    <!-- ? we can write react application without the jsx by writing the React.createElement() function by ourself -->
+    <!-- ? But jsx made our life easier -->
+    <!-- ? When we write jsx it converts to React.createElement() function with the help of babel transpiler -->
+    <!-- ? As it is pure js we can provide any js expression here and its much more faster  -->
+    <!-- ** Video 3 (Components and how props works, unidirectional data flow) -->
+    <!-- ? Components in react -> Building blocks of the ui -->
+    <!-- ? Small parts of the ui so that we can implement them as speparate thing and manipulate if needed  -->
+    <!-- ? Easier to maintain and easy to understand 4 ways to identify the components we know from prior lecture -->
+    <!-- ? Now let's talk about the props   -->
+    <!-- ? Jokhon amara jsx likhi and behind the scene jokhon React.createElement() toiri hoi tokhon amra oi component a data pathai to make it reusable -->
+    <!-- ? Ei j data ta pathay parent component theke child a eitai props -> props k ektar por ekta child element a amra pass korte pari ei jinish ta props drilling bole -->
+    <!-- ? Pathanor somoy amra majh khane kono ekta jaigai props er value change korte pari na bcz props are read only or immutable -->
+    <!-- ? Grandparents -> Parents -> child -> unidirectional props flow -->
+    <!-- ** Video 4 ( (advanced) How states works, asynchronous, console state) -->
+    <!-- ? In a react application depending on the user interaction there will be many variable which could change or not, and this stated as the state -->
+    <!-- ? In a functional component to use the state and to update that we use a hook called useState() -->
+    <!-- ? const [stateValue, setStateValue-> updater of that value] = useState(initial State value); -> useState() -> dispacher function returns an array  -->
+    <!-- ? setState() which is a async function while user interact it changes or update the state value , only if it's updated its dispach otherwise not , since, it worked parellel with other things on the ui , that's why it only update the desire state -->
+    <!-- ? once setState dispatch it update the state associated with it in the ui then set that updated value to the state variable asynchronously -->
+    <!-- ? To update the ui and as well as the state instantly there is another hook called useEffect(,[you tell it for which one it will execute]) -->
+    <!-- ? useEffect(,[]) -> if no dependency list it will only render once while the website first rendered -->
+    <!-- ? useEffect(,[dependencies]) -> will render while the dependecies update or change -->
+    <!-- ** Video 5 (How React Hook works, send state via props , props vs state) -->
+    <!-- ? Hook-> Hook is kind of special function, Hooks give react the functionality to listen various events happening -->
+    <!-- ? Hook ashole react er sathe angta lagai -->
+    <!-- ? Kono kisu ui te change hole react ta hook er maddhome detect kore and sudhu matro je jaigai change hoise oi jinish ta update kore efficintly tar algorithm er maddhome -->
+    <!-- ? useEffect() hook all kinds of sideellect er jonno use hoi -->
+    <!-- ? sideeffect kon gula je shob jinish react e include na ogla niye kaj korte chaile amra useEffect hook use korbo -->
+    <!-- ? sideeffect example -> Api fetch ja react er ongso na + Browser width detection + jodi explicitly dom manipulate korte hoi tahole useEffect hook use kore react theke dom manipulate kora jai -->
+    <!-- ? Orthat je somostho jinish e react er control nai ogla react a use korte hole amra hook use korbo -->
+    <!-- ? props -> {} -> object amra data unidirectionally ek component theke onno component a pathanor jonno use korbo -->
+    <!-- ? state -> ui te kono kisu change hoi state er maddhome state update korar maddhe react ui update kore -->
+    <!-- ? jei khane or jei component a state declare and update kora hoi oita k statefull component bole, je khane just dekhano hoi kono state thake na oitake amra stateless or presentational component bolbo -->
+    <!-- ? amra kono component theke oitar child component a state k props er maddhome pathate pari -->
+    <!-- ? props vs state -->
+    <!-- ? props are immutable orthat egla change kora jai na  -->
+    <!-- ? state are updateable setState() function update kore , but jokhon eita props hisabe pathabo hoi child element e oita k r update kora jai na as the props are immutable or read only -->
+    <!-- ** Video 6 (What is React, when to use it, react vs angular vs vue) -->
+    <!-- ? React is a library -> which is small package -->
+    <!-- ? React only foucused on the ui MVC -> it only focuses on the view -->
+    <!-- ? React is more flexible which could be use with so many other packages as we need them to serve our specific purposes -->
+    <!-- ? Library -> which serves a specific purpose the ui in this case -->
+    <!-- ? React is declarative,efficient,flexible and fast -->
+    <!-- ** Video 7 (How react works, Render, virtual dom, diff algorithm, fiber) -->
+    <!-- ? Why we use react -> In the vanila js  -->
+    <!-- ? we update anything in our app we need to every time go through the whole process and the dom has to adjust the whole thing for us, also we need to pick the everything where we want the changes document.getElementById() also when we develop the large application managing the code or reusibility is very less -->
+    <!-- ? To mitigate this problem react comes into play which gives us components , these components can be considered as separeted app  -->
+    <!-- ? These are re-usable independent of state, mane eder state independently change hobe -->
+    <!-- ? If we want we can make multiple components out of them -->
+    <!-- ? In react we don't need to every time pick the id of the dom to change -->
+    <!-- ? we just change the state and react does the rest for us -->
+    <!-- ? React a 2 ta jinish thake  -->
+    <!-- ? 1. React object -> amra jokhon component a jsx likhi ta transpiler theke react element make kore ReactDOM a pathay dei  -->
+    <!-- ? 2. ReactDOM for web and ReactNative for mobiles -->
+    <!-- ** ReactDOM ki kore ei ta k Browser DOM er sathe diff algorithm diye compare kore render kore -->
+    <!-- ** Video 8 ( React Class Component, Component lifecycle and rerender) -->
+    <!-- ? React component lifecycle -->
+    <!-- ? https://saikat-hossain.medium.com/react-lifecycle-bf83b9832be8  -->
+    <!-- ? 3 stage(1.mounting,2.updating3.unmounting) -> kono react component jokhon banano hoi -->
+    <!-- ** Mounting -->
+    <!-- ? 1st step-> class component a constructor method call kore oi component ta banay  -->
+    <!-- ? step 2. er por render er kase jai  -->
+    <!-- ? step 3. render DOM k manipulate kore ui te show korle finally component ta DOM a Mount hoi ***Ei stage componetDidMount hoi*** -->
+    <!-- ** Ekhon component did mount hole amra data fetch korte parbo or the other things ja korte amader component ta ui te mount howa lagbe ogla korte parbo -->
+    <!-- **** Updating -->
+    <!-- ? kono state change hole shouldComponentUpdate() ei method call hoi -> render a jai -> dom update kore -> er por componentDidUpdate() method dei amra er por chaile notun kaj o korte pari -->
+    <!-- **** Unmounting -->
+    <!-- ? Suppose amra kono ekta page theke chole jassi oikhane amader application er jonno onek poriman data load kore rakhsilam but application er onno page a amader oi data gular r dorkar nai tai amara chole gele componentWillUnmount kore dite parbo -->
+    <!-- ** Video 9 ( Module Summary, recap, Properties vs attributes) -->
+    <!-- ? important Video go through it for understanding the whole module -->
+  </body>
+</html>
