@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-50.5</title>
+  </head>
+  <body>
+    <!-- ** Video 1 (Understand useState and how does it work) -->
+    <!-- ? 1. State management -> means amader j variable gula user interactions er jonno change hoi ogla amra functional react component a useState diye manage korte pari -->
+    <!-- ? 2. Conditional rendering -> kono kisu true hoile ekta text show korbe false hoile ekta -> menas or state er upor depend kore text change hobe -->
+    <!-- ? 3. Toggle -> !-> not use kore kono button click a state a thaka previous man ta change kore dibo and eivabe render korbo (like dark and light mode) -->
+    <!-- ? 4. Counter -> increament decrement kore previous man k update korbo -->
+    <!-- ? 5. Store api data -> ei khetre 2 ta jinish hoi 1. data load hobe ki hobe na 2. data tar initial value ki hobe and data fetch hole value change hoye ki hobe ei jonno amra state declare kori -->
+    <!-- ** Video 2 (Recap UseEffect Function and different variations) -->
+    <!-- ? UseEffect() -> hook -->
+    <!-- ? use cases  -->
+    <!-- ? 1. fetch data from Api -->
+    <!-- ? 2. real DOM manipulations -->
+    <!-- ? 3. Asynchronous kaj a lage like -> 1.setInverval 2. setTimeout + Few browser related works -->
+    <!-- ? 4. getting the data from localStorage  -->
+    <!-- ? UseEffect likahr system -> -->
+    <!-- ? 1. UseEffect(2 ta parameter nei-> ()=>{},[dependency list]) -->
+    <!-- ? 2. UseEffect(()=>{}) -> if no dependency array given then it will render and re-render in every change in the ui -> like a perpetual force -->
+    <!-- ? 3. UseEffect(()=>{},[]) -> empty array dile only first render a kaj korbe -->
+    <!-- ? 4. UseEffect(()=>{},[dependency]) -> dependency dile dependency te kisu change hole UseEffect re-render hobe  -->
+    <!-- *** cleanup function -->
+    <!-- ? suppose kono application er kono page a amra data fetch kore ansi ekkhon onno ekta page a jabo ager data er kono drkr nai tokhon oi fetch call ta ke or pura component ta ja oi page a silo oder unmount korar drkr porbe tokhon amra cleanup function likhbo  -->
+    <!-- ? cleanup function oi component or fetch ta k amamder application theke unmount kore diye amader application er performance barabe -->
+    <!-- ? cleanup function likhar upay UseEffect er vitor a return ()=>{ ei khane cleanup kore deya } -> UseEffect er return a cleanup function likhate hoi -->
+    <!-- ** Video 3 ( Client side rendering and server side rendering) -->
+    <!-- ? Render + Reactivity -->
+    <!-- ? render() is a method that displays the output in the webpage -->
+    <!-- ? CSR-> Client-side-rendering -> server a data thake, html, css, authentication, API thake -> -->
+    <!-- ? Jokhon kono website k request kora hoi dekhar jonno tokhon egla shob client or browser alada alada package arake niye ashe or kase and sesh a shob kisu k eksathe milay site ta user er kase render kore eitai Client side rendering -->
+    <!-- ? SSR -> server side a shob orthat alada alada vabe ekta website er bivvinno page banano thake already user usable -> so jokhon amra browser a request kori tokhon o ready made site ta amader ene dekhay -->
+    <!-- ? Kokhon konta use korbo -->
+    <!-- ? Jodi SEO priority hoi tahole amra SSR use korbo google esaily detect korte pare keyword gula bcz oita already banano ekta jinish -->
+    <!-- ? SSR -> SEO lagle use korbo na -> eita onno type er website user interaction niye kaj oikhane use korbo -->
+  </body>
+</html>
