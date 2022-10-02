@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-52</title>
+  </head>
+  <body>
+    <!-- ** Video 1 (Module Introduction, simple react router setup) -->
+    <!-- ? What is routes ? -->
+    <!-- ? routes are path which will show different contents upon using different paths or urls by the user request -->
+    <!-- ? How to create a whole setup of router in react -->
+    <!-- ? 1. use a package -> npx i react-router-dom -->
+    <!-- ? 2. create your routes -> where you want to go or in which path what you want to show -->
+    <!-- *** const routes = use createBrowserRouter([
+        {
+            path:'/', -> koi jabo
+            element: <div>Hello</div> -> and gele ki dekhte pabo
+        }
+        ]) -->;
+    <!-- ** 3. and upore je router banaisi path and ki dekhbo diye oita k use korte hobe but kivabe -->
+    <!-- ? make a component inside return(<RouterProvider router={router} /> -> router provider use kore -> contex api er moddhe router props ta pass kore dile hobe) -->
+    <!-- ** Video 2 (Create Simple Route with Links and Components) -->
+    <!-- ? Er age amra url hard code kore kore page a navigate korte silam -->
+    <!-- ? ekhon amara click korle bivinno page k dekhbo but kivabe? -->
+    <!-- ? ei jonno jodi amra <a></a> tag use kori tahole amra click korle oi url a router setup kora thakle chole jabe-->
+    <!-- ? but <a></a> use korar kisu vejal ase eita single page application er moto kaj korte na eita reload nei so a er bodole amra <Link to="/home"></Link> ei vabe use korbo -->
+    <!-- ** Video 3 ((interesting) Nested route and outlet for shared content) -->
+    <!-- ? every website er koyekta jinish  thaek -> like kisu jinish fixed r kisu jinish change hoi -->
+    <!-- ? so jeshob jinish change hoi ogla amra ekta layout -> er vitor Outlet e children hisabe rakhbo r ja fixed egla er baire thakbe normally -->
+    <!-- ** Bepar ta simple -> layout ekta Main.js component banabo and oitar vitor ja ja content differnt route e gele change hobe tader <Outlet></Outlet> er vitor rakhbo and ja change hobe na tader outlet er upor niche rekhe layout ta create korbo -->
+    <!-- ** See the example -->
+    <!-- ** Video 4 (Load Users, display users, dynamic link, Not Found) -->
+    <!-- ? Ai video te amra koyekta jinish sikhsi  -->
+    <!-- ? 1. jei route or path a amra data load korte chay oi khane khub easily amra data load korte pari with a loader: async()=> {return fetch(`url`) diye  } -> data load holo -->
+    <!-- ** ekhon oi component a giye just useLoader() hook use kore amra data ta k dhorbo and then use korbo amader need onujaye -->
+    <!-- ? 2. Dynamic link kivabe banabo jake dynamic link banate chai oi jai gai giye <Link to={`friend/${id}`}>{username}</Link> korle prottekta username ek ek ta dynamic url provide korbe -->
+    <!-- ? 3. Not found page orthath user kono ekta url dilo ja amra specify kori nai ta handle korte createBrowserRouter() er sesh a giye amra path:'*' diye dibo dile je somosto route amader specify kora nai user kono ta hit korte user not found dekhabe -->
+    <!-- ** Video 5 (React route parameter and load data based on dynamic route) -->
+    <!-- ? Ekhon er age j amra dynamic url banaisi sei dynamic url er vitor amra dynamic vabe data load korbo ekta component banay tate sei data dekhabo -->
+    <!-- ? 1. Amader synamic link to agei banano ase -->
+    <!-- ? 2. oi link a gele j component render korbo oita ekhon banabo -->
+    <!-- ? 3. Oi component er jonno new ekta path and element specify korbo createBrowserRouter([{}]) ei khane giye   -->
+    <!-- ? 3. dynamic path er jonno path:'friend/:friendId' :er por j part ta dynamic tar jonno colon dibo -->
+    <!-- ? 4. ekhon oi dynamic link er jonno dynamic data load kivabe hobe loader: async({params})=> console.log(params) korle oita return korbe {friendId: 1/2/3 erokom jinish-->
+    <!-- ? 5. ekhon amra return fetch kore dymanic vabe url set kore dilei data load hoye jabe oi component a -->
+    <!-- ** Video 6 ((Recap) Create Route and Load Data based on Route) -->
+    <!-- ? recap of privious video and intro to the useNavigate() hook from react-router-dom -->
+    <!-- ** Video 7 ( (Recap) Dynamic route, Dynamic Data loader and active route) -->
+    <!-- ? use of NavLink instead of Link -> they are almost similar but the NavLink will show you the active link using NavLink -->
+    <!-- ** Video 8 ((optional) Browser Router, Routes and Route Component) -->
+    <!-- ? A different setup -> <BrowserRouter><App/></BrowserRouter> in index.js   -->
+    <!-- ? In app component <Routes> -> <Route path='/' loader={} element={<Home/>}> -->
+  </body>
+</html>
