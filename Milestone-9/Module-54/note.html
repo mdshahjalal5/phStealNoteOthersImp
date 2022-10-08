@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-54</title>
+  </head>
+  <body>
+    <!-- ** Video 1 ( Another Recap of React Router Setup) -->
+    <!-- ? Simple route setup of the website + Header,Home,Orders components made -->
+    <!-- ** Video 2 (Display TShirts and style t-shirt components) -->
+    <!-- ? Grab the t-shirt data and display in the Home + built a cart container-->
+    <!-- ** Video 3 ( Recap Remove from cart and not allow duplicate) -->
+    <!-- ? Single item add only no duplicate  -->
+    <!-- ? Kivabe korbo -->
+    <!-- ? cart a find korbo amra click korle je id ashtese oi id r kono kisu cart a ase kin -->
+    <!-- ? jodi na thake amra tahole newArray[...cart,addedProduct] -> eita korle main products theke find kore ante hobe added product k add kore dibo or newArray[...cart,wholeTshirtdatabosaydibo] -->
+    <!-- ? r jodi exist kore ekta alert dibo already added to the cart -->
+    <!-- ? remove from cart kemne korbo -->
+    <!-- ? X button a click korle oitar id pathay dibo clickHandle e er por just cart theke oi id sara bakigula k niye nibo and oita setCart(bosaydibo) bas kaj sesh -->
+    <!-- ** Video 4 (Explore Conditional Rendering & conditional css class) -->
+    <!-- ? Conditional rendering + conditional css class rendering -->
+    <!-- ? Condition er upor depend kore kono ekta element k render korbo or kono ekta css class k activate korbo -->
+    <!-- ** Conditional rendering 4 dhoroner : -->
+    <!-- ? 1. kono ekta variable a kono value rekhe amra value ta if-else condition er upor depend kore render korbo -->
+    <!-- ? 2. tennery operator er upor depend kore kisu ekta render korbo or korbo na -->
+    <!-- ? 3. && operator -> kono ekta sorto sotto hole amra kono ekta element render korbo -->
+    <!-- ? 4. || Or operator-> kono ekta sorto sotti na hole amra kisu ekta render korbo -->
+    <!-- ** Video 5 (Grandfather Create a Family Tree and share same data) -->
+    <!-- ? ek component theke j onno component a amra data pathay oita props diye pathay -->
+    <!-- ? Amra uporer component theke nicher component a data pathayte pari ek level upor theke ek level niche -> ei jinish ta holo props drill kore -->
+    <!-- ? ei section a ekta parent component theke onek gula child component abar child theke grand child a data pathano hoise -->
+    <!-- ** Video 6 (Prop Drilling to pass data to a many level components) -->
+    <!-- ? ei explicitly or manually props pathano onek cumbarsum + jokhon application er onek level hoye jabe eita onek differnt somossha korbe  -->
+    <!-- ** Ei jinish theke porittran er jonno amader ase context Api -->
+    <!-- ? Context api 3 ta steps a kaj kore -->
+    <!-- ? first task: create a context -> ki data ashole pathabo createContext('Initial or default value dibo') -->
+    <!-- ? value to banailam ja pathabo -->
+    <!-- ? Ekhon ei value ta kon parent er vitorer child er jonno banailam sei parent k amra context provider hisabe set korbo -->
+    <!-- ? R j recive korbe tar jonno ekta system ase -->
+    <!-- ** Video 7 (Simple Introduction to Context API to avoid Prop drilling) -->
+    <!-- ? Context Api step by step process -->
+    <!--? 1. First Step: create a context(consider it as a database of props) -> const CountContext = createContext(default value dibo) -->
+    <!-- ? 2. Specify the Area where the context data will be accisible? <CountContext(je context banaisi,j data base data provide korbe).Provider value={[data 2 vabe send kora jabe hoi array akare or na hoi string akare]} -> ei value er vitor thaka data er pet a avaiable component er kase accisible hobe> -> Jara ei data access korte parbe / (Je area te data avaiable hobe)   <CountContext.Provider> -->
+    <!-- ? const CountContext = createContext(default value dibo) -> ei default value ta tahole keno-->
+    <!-- ? Area r baire kono component a jodi amra context ta access korte chai tahole ei default value ta access korte parbo , but provider je value prop dei oi value ta tokhon amra r access korte parbo na -->
+    <!-- ? Kono component a data kivabe dhorbo? -->
+    <!-- ? const data = useContext(kon context er pathano data dhorte chai ta specify kore dibo) -->
+    <!-- ** Video 8 ( Deploy react router reload issue and introduction to react dev tool) -->
+    <!-- ? react-router-dom netlify deploy korbe normal build e problem dei oita kivabe fix kore? -->
+    <!-- ? Public folder a giye just ei name a ekta file banaw _redirects -->
+    <!-- ? Er por oi file er vitor giye eita paste kore dau -> /* /index.html 200 -->
+    <!-- ? Install react-dev-tool chrome extension to see the react component and performances -->
+    <!-- ** relavant documentation -> https://dev.to/rajeshroyal/page-not-found-error-on-netlify-reactjs-react-router-solved-43oa -->
+    <!-- ** Video 9 (Module Summary and interview questions) -->
+    <!-- ? Summary + Interview Questions -->
+  </body>
+</html>
