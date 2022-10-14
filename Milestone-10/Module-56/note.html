@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-56</title>
+  </head>
+  <body>
+    <!-- ** Video 1 (Module Introduction, authentication vs Authorization) -->
+    <!-- ? Ekta system k secure korte chaile authentication and Authorization er kono bikolpo nai -->
+    <!-- ? Authentication ki? -> Authentication determines the identity of a user j ei bekti amar website er user kina ? jodi na hoi dhuke dibo na , hoile dhukte dibo -->
+    <!-- ? Authentication 2 rokomer hoi -> in-build app a nijeder banano authentication or third-party authentication like-> google,facebook etc -->
+    <!-- ** Authorization -> kono ekta user k amar website er ki ki jinish authorise korse parbe or access korte parbe -> user kono ekta service use korar access pabe ki pabe na tai authorisation -->
+    <!-- ? few companies provide Authentication solutions  -->
+    <!-- ? https://www.okta.com/ -->
+    <!-- ? https://microsoft365.senetic.de/azure/-->
+    <!-- ? https://firebase.google.com/?gclsrc=ds&gclsrc=ds -->
+    <!-- ? https://oauth.net/2/ -->
+    <!-- ** Video 2 (Create firebase project and Install Firebase SDK) -->
+    <!-- ? /* 
+            -----------------------------
+                INITIAL SETUP
+            -----------------------------
+            1. visit: console.firebase.google.com 
+            2. create a new firebase project
+            3. Visit doc ( go to docs): Build > Authentication > web > Getting started
+            4. Register web app > firebase project home > click Web > give name and register
+            5. Install firebase for your project: npm install firebase
+            6. DANGEROUS: get firebase config and put it in firebase.init.js
+            7. export app from firebase.init.js  -->
+    <!-- ** Video 3 ( Initialize firebase auth and set Sign in with google) -->
+    <!-- ? 1. To use firebase authentication system in your app first create the auth in your app using getAuth from 'firebase/auth' -->
+    <!-- ? 2. To use the third party authentication or make your third parth authenticator use googleAuthProvider() -->
+    <!-- ? 3. specify google in your firebase build website -->
+    <!-- ? 4 go to build -> authentication -> enable google as your third party -->
+    <!-- ** Video 4 ( Open google login popup and Recap google popup sign in) -->
+    <!-- ? see example -> we additionally use signInWithPopup used here -> it takes 2 parameters -> 1. auth 2. provider  -->
+    <!-- ? auth ashbe getAuth(app) and provider ashbe new googleAuthProvider() theke -->
+    <!-- ** Video 5 (Display logged in user info, Sign out, toggle sign in, sign out) -->
+    <!-- ? Ekhon sing-in korle amra user info petew pari abar nau pari tai oitake ekta state a store kore amra data ta ui te dekhabo -->
+    <!-- ? Signout button implemented  -->
+    <!-- ** Video 6 (Enable Github sign in and Create github application) -->
+    <!-- ? github signin steps -> -->
+    <!-- ? 1. set or enable git hub in the website , 3 ta jinish lagbe 1. clientId 2. secrectId 3. callback url -->
+    <!-- ? callback url amra firebase theke niye github k dibo -> github a settings a giye developer option the ekta app create korbo -> oita amader 1.cleintid and 2.secrectId dibe -> egla niye amra firebase a boshale kaj sesh -->
+    <!-- ?** ekta project name dite hobe + Homepage url + callback dite hobe -->
+    <!-- ? generate korbe cleint id + secrectId or something -->
+    <!-- ** Video 7 ( Implement github login system) -->
+    <!-- ? now new GithubAuthProvider k deke ene baki kaj as like google one -->
+    <!-- ** Video 8 (Module Summary and display user info) -->
+    <!-- ? Tried twitter but not work -->
+  </body>
+</html>
