@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-58</title>
+  </head>
+  <body>
+    <!-- ** Video 1 (Module Introduction and Basic Project Setup) -->
+    <!-- ? Simple project setup has been done here -> 1. React router 2. firebase 3. context api 4.daisy ui -->
+    <!-- ** Video 2 (Create Login and Registration Form using Daisy UI) -->
+    <!-- ? 1. Simple login and registration form generated with the help of daisy ui hero section content -->
+    <!-- ** Video 3 (Create User Context for shared authentication) -->
+    <!-- ** Amader kisu jinish thakbe ja authentication take share korbe like -> amar ekta user login sara kon page visit korte parbe konta parbe na  -->
+    <!-- ** Abar amader bisinno page login info er dorkar porte pare tokhon amra eita use korbo -->
+    <!-- ? er age amra context kivabe seet kortam ->  -->
+    <!-- ? amra ekta context banatam const Context = createContext() diye  -->
+    <!-- ? <Context.Provider value = {kono ekta value set kortam}>Ei khane jader vitor ei value use korte chai take ditam<Context.Provider/>  -->
+    <!-- ? Now amra context banabo ekta component er moto kore oita k export kore dibo -->
+    <!-- ? er por jake tar pet er vitor age rakhte chaitam take oi component er <UserContext>children  hisabe pathay dibo</UserContext> -->
+    <!-- ? const UserContext = ({children hisabe oita pabo})=> {
+        ekhane amra j context banaisi <Context.Provider value = {kono ekta value set kortam}>{children dynamically set kore dibo}<Context.Provider/> 
+    } -->
+    <!-- ** Video 4 (Access Context Value from anywhere inside the app) -->
+    <!-- ? ekhon umbralla set kore disi or vitor app ase , app er vitor thaka shon jaigai ekhon amra context ta use korte parbo -->
+    <!-- ? ei video te ei jinish tai dekhano hoise -->
+    <!-- ** Video 5 (Add Create user and Sign in user using context API) -->
+    <!-- ? Amra amader UserContext() component a createUser() -> return createUserWithEmailPassword(auth-> eita pabe context theke bcz amra context ei getauth k deke ansi,email,password pabe ei fucntionta jekhane call hobe oikhan theke) signIn() 2 ta function likhtesi and eder moddhe -->
+    <!-- ? createUser(email,password) -> 3 ta params set kore <UserContext.provider value={signIn,createUser} function ta pathay dissi -->
+    <!-- ? er por amader context umbraller r niche thaka jekono je kono component theke amra ta access korte parbo -->
+    <!-- ** Video 6 (Use onAuthStateChanged to manage user auth state) -->
+    <!-- ? why we need onAuthStateChanged(auth,(currentUser)) ? -->
+    <!-- ? Suppose amader ekta existing user login korlo or info result er vitor amra pabo oita k dhore setUser(result.user) amra set kore dite pari -->
+    <!-- ? Abar amader ekta user register korlo or info amra same vabe result a pele setUser() e set kore dite pari -->
+    <!-- ? Abar kono user signout korlo means r kono user nai amra setUser a set kore dilam ekta setUser({}-> empty obj) -->
+    <!-- ** So j j component a amader ei kaj gula hosse prottek ta jaigai amader setUser explicitly set kora lagtese -->
+    <!-- ? Ei j authenticated or currentUser jini logged in obostay asen tar info ta amader bar bar setUser a set kora lagtese eita theke kmne mukti pete pari -->
+    <!-- ? Ans hosse amra onAuthStateChanged use korbo -> user er auth a jai kisu hok na keno amra eita theke ta peye jabo -->
+    <!-- ** Ekta jinish holo ei j loggedin user er value j log in kortese tar upor vitti kore change hosse ei jinish ta kothay hosse ? -->
+    <!-- ? firebase a hosse -> so eita react er bairer side effect -->
+    <!-- ** sideffect amra 2 vabe react a likhi ekta holo -->
+    <!-- ? 1. kono event trigger hole(button a click or kono kisur onChange a likhi) -->
+    <!-- ? 2. sideEffect er jonno amra useEffect() -> hook use kori -->
+    <!-- ** Ei khetre amra logged in user amra k ase ber korar jonno application jokhon ashbe or first load hobe tokhon pete chai tai useEffect a likhbo -->
+    <!-- ** but jokhon onno component gulay giye giye amra setUser() kortesilam tokhon login or register button click a amra user set kortam tai amader useEffect lage nai -->
+    <!-- ? Amra jokhon useEffect use korbo tokhon amader oita k componentDidUnmount korar dorkar porte pare tai amra ekta cleanup function useEffect er vitor likhe felbo -->
+    <!-- ? So amra jokhon oi page gula theke chole jabo useEffect ta automatic unMounted hoye jabe amader application theke -->
+    <!-- ** Video 7 (Implement Sign out and toggle log in and log out button) -->
+    <!-- ? Ei section a amra singout button implement korsi   -->
+    <!-- ? Signout implement korle amra dekhte pabo -> signout korle koto easily amader onAuthStateChanged oitar state ta change kore user null kore dei -->
+    <!-- ? onAuthStateChanged reload dilew amader user ta amader dekhai jehetu oita firebase theke ashe-->
+    <!-- ? last a amra sign in with google popup implement korsi -->
+    <!-- ** Video 8 (Introduction to Private Route and navigate after login) -->
+    <!-- ? Private route name a ekta component banbo -> -->
+    <!-- ? jader private hisabe rakhte chai tader k <PrivateRoute>er pet er vitor vore pathay dibo</PrivateRoute> -->
+    <!-- ? Jokhon kew private router link gula te click korbe amra tokhon kisu jinish check kore pet er vitor thaka component ta ke render korbo -->
+    <!-- ? amader ei khane amra user && user.uid ei 2 ta jinish check korsi jodi thake children ta return kore disi -->
+    <!-- ? na thakle <Navigate to = '/jekhane pathate chai oita bole disi'> return kore dite hobe -->
+    <!-- ? But reload dile user login thaklew jinish ta navigate a niye jabe bcz async process a o sathe sathe user ta pai na  -->
+    <!-- ? so solution ki amra ekta loading state nibo surutei at the context oita true kore rakhbo -->
+    <!-- ? jokhon useEffect a user ta load hoye jave amra setUser() kore niche loading(false) kore dibo er por loading ta ke context a privaterouter moddhe pathay dibo-->
+    <!-- ? So private router loading jokhon true thakbe amra if diye loading... likha dekhabo=> loading false hoye gele orthat user ta load hoye gele baki code execute hobe -->
+    <!-- ** Video 9 (Module Summary) -->
+  </body>
+</html>
