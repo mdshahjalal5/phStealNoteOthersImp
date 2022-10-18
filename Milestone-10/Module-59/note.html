@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-59</title>
+  </head>
+  <body>
+    <!-- ** Video 1 (Module Introduction firebase setup and git clone) -->
+    <!-- ? firebase setup + login and register page  added in ema-jhon simole -->
+    <!-- ** Video 2 (Create Login component and style Login form) -->
+    <!-- ?login style created from the figma -->
+    <!-- ** Video 3 (Setup Auth Context under UserContext to share auth info) -->
+    <!-- ? setting the userContext conponent from the AuthContext api like before or privious module -->
+    <!-- ** Video 4 (Get Form Data and display form error) -->
+    <!-- ? Simple form data get + password validation  -->
+    <!-- ? signup functionality implement at the UserContext -->
+    <!-- ** Video 5 (Implement Login Sign Up and Sign Out) -->
+    <!-- ? log In , sign out and sign up implemented here + form reset  -->
+    <!-- ** Video 6 (Understand onAuthStateChanged observer) -->
+    <!-- ? useNavigate to the shop route + onAuthStateChanged added -->
+    <!-- ** Video 7 (Create a shipment page and Implement Private Route) -->
+    <!-- ? Private routes implemented and navigate to the requested route using the <Navigate  state ={{from: location}} replace/> -->
+    <!-- ? Login jokhon user fetch hobe amra eita k user requested page a pathay dibo useLocation theke from pathname ber kore anbo and {replca=true} kore dibo  -->
+    <!-- ** Video 8 (After Login Redirect Navigate to the right route) -->
+    <!-- ? Amra loading true kortesi first time jokhon component or UserContext ta load kortesi -->
+    <!-- ? Er por jokhon amra useEffect a firebase theke user peye jassi tokhon abar loading ta false kore dissi -->
+    <!-- ? Kintu jokhon amra login hit kortesi amader useEffect to component first time render a loading ta false kore dise -->
+    <!-- ? Tokhon private route a amader loading ta false hoye ase tai se user load hoawr agei , user and user.uid na peye login kei abar render kortese but ashole login hoye async vabe user ektu late a ashche -->
+    <!-- ? Ei problem solution er jonno use jokhon e login , signUp or logout hit korbe amra loading k true kore dibo -->
+    <!-- *** Loading true korbo 4 ta jaigai -->
+    <!-- ? 1. first time component jokhon mount hobe const[loading,setLoading]= useState(true) tokhon -->
+    <!-- ? 2. Jokhon login click korbo tokhon -->
+    <!-- ? 3. Jokhon Signup click korbo tokhon -->
+    <!-- ? 4. Jokhon SignOut click korbo tokhon -->
+    <!-- *** Loading false korbo kokhon ? -->
+    <!-- ? Jokhon user ta load hoye useEffect a ashbe tar por -->
+    <!-- ** Video 9 (Host your react app to firebase) -->
+    <!-- ? -->
+    <!-- ** Steps -->
+
+    AUTH SETUP 1. create firebase project 2. enable web 3. enable sign in method
+    4. install firebase 5. get firebase config in your firebase.config.js file
+    6. export app from firebase.config.js 1. Create UserContext (Auth Context):
+    UserContext --> component name, userContext provides AuthContext 2. Create
+    AuthContext 3. set AuthContext.Provider 4. Make sure you set the children 5.
+    export AuthContext to be used inside useContext hook 6. get form data 7.
+    getAuth in the UserContext FIREBASE HOSTING ----------------------- one time
+    for each computer 1. npm install -g firebase-tools 2. firebase login for
+    each project one time 3. firebase init Make sure: for public directory: you
+    select: build single page application: y for every deploy 4. npm run build
+    5. firebase deploy
+  </body>
+</html>
