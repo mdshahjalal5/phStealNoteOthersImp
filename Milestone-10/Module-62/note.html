@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-62</title>
+  </head>
+  <body>
+    <!-- ** Video 1 (Recap and Display Login error and Private Route) -->
+    <!-- ? Recap -->
+    <!-- ** Video 2 (Private Route Fix Reload and redirect after login) -->
+    <!-- ? Make private route to the news and redirect to the desired page after login -->
+    <!-- ** Video 3 (Accept Terms and conditions update name and photo) -->
+    <!-- ? Terms and conditions + password eye show and hide + update userProfile  -->
+    <!-- ** Video 4 ((Optional) Send Email Verification Email) -->
+    <!-- ? email verification sent -->
+    <!-- ** Video 5 ((Optional) Enforce email verification and debug warning) -->
+    <!-- ? Enforce email verification -->
+    <!-- ? 1. if -> result.user.emailVerfied -> false hoi tahole amra login page a navigate korbo na , true hole desired page a pathay dibo -->
+    <!-- ? 2. But amader user ta onAuthStateChanged a set hoye jassilo -> to solve this problem -->
+    <!-- ? 3. amra bolbo -> currentUser.emailVerfied true hole setUser(currentUser) korbo otherwise na -->
+    <!-- ? 4. But eibar problem holo amra jodi signedout kori firebase currentUser k null kore fele -->
+    <!-- ? 5. so signout hole amader currentUser null hoi tai signout er state ta amara amader setUser() a set korte pari na , to solve this  -->
+    <!-- ? 6. amra bolbo jodi currentUser === null othoba || currentUser.emailVerfied hole amra setUser(currentUser) korbo -->
+    <!-- ? 7 . ekhon suppose kono email ja verified na tar jonno private route a gele amader login page dekhanor kotha but sppiner dekhasse  -->
+    <!-- ? 8. eitar reason holo amra login a hit korar por setLoadin(true ) hoye jasse but amader email verified na howar jonno promise ta resolve hosse na -->
+    <!-- ? so loading ta true theke jasse ? eita solve korar upay holo -> login page a try catch er por finally diye amra setLoading k false kore dibo -->
+    <!-- ** video 6 ((Optional) Update username photUR with useRef) -->
+    <!-- ? user profile er name and photo url change korbo but kivabe -->
+    <!-- ? 3 vabe korar jai  -->
+    <!-- ? 1. amra usually jevabe input field theke data niye kori form submit a  -->
+    <!-- ? 2. amra jeta change korbo oitar ekta default value diye state banay felbo er por onChange trriger kore setState(chage er por value ta boshay dibo) -->
+    <!-- ? 3. useRef(default value) hook use kore -> jar data referennce hisabe nibo take ref hisabe set kore dibo -> like <h1 ref={useRefVeriable}></h1> -->
+    <!-- ** er por useRef() ekta object return kore or current er vitor amra jake refference korsi or man ta peye jabo -->
+    <!-- ** use effect and useState er difernce  -->
+    <!-- ? 1. use State async , useRef - sync -->
+    <!-- ? 2. useState data can be changed but useRef data cann't change first a ref a j value set hoi oitai thake value change hole j rerender hoi tokhon r data change hoi na  -->
+    <!-- ? onno vabe useRef a data change hoi na jonnoi rerender cause kore na -->
+    <!-- ? returns an object {with a current property} -->
+    <!-- ** Video 7 ( (optional) Environment variable for Firebase in Create React App) -->
+    <!-- ? -->
+  </body>
+</html>
