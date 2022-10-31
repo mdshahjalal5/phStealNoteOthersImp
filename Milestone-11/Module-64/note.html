@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-64</title>
+  </head>
+  <body>
+    <!-- ** Video 1 (Module overview node vs other language) -->
+    <!-- ? How node js works? -> Node works in the server side -->
+    <!-- ? The human readable code goes to the single thread of the node v8 engine  -->
+    <!-- ? If the works is synchronous it executes one by one but if it's async it sends to the worker -->
+    <!-- ? When the async job is finished the worker send it to the que and event loop sees if there is no operation in the main thread it immidietly send it to that thread to execute -->
+    <!-- ? This way node can handle millions of operations like in chating app, video conferencing,e-commerce application -->
+    <!-- ** Due to node js now its possible to work with the backend , filesystem which js can interact easily -->
+    <!-- ? If the work is heavy computational related then the node server is not recommended bcz in the main single thread it will take hours to execute which is not acceptable where server made with java has multiple threads to handle this sort of works -->
+    <!-- ** Video 2 ( install node-express and use fetch to load data) -->
+    <!-- ? Simple api create and show data to the ui -->
+    <!-- ** Video 3 (Create React form and Post API and send data to the server) -->
+    <!-- ? 1st task : amra backend e data receive korbo -->
+    <!-- ? er jonno amra backend e app.post('/url',(req,res)=> .....) -->
+    <!-- ? cliend side e amra {name,email} - diye user banabo  -->
+    <!-- ? fetch diye oi user k server a pathabo but kivabe ? -->
+    <!-- ? fetch('url',{
+        method: "POST",
+        headers: {
+            "content-type" : "application/json"
+        },
+        body : JSON.stringyfy(jake pathabo take dibo)
+    })
+            .then(()=> console.log("data chole gelo"))
+            .catch((err)=> console.lag(error))
+    -->
+    <!-- ** data chole gele data ta excess korbo kivabe  -->
+    <!-- ? Amader data undefined dibe -> to solve that 2 options 1.body-perser or 2.middleware app.use(express.json()) -->
+    <!-- ? Ekhon post er vitor data ta pabo -->
+    <!-- ? Amra post theke abar data ta send kore client a pathay dibo  -->
+    <!-- ** Amra chaile same url a get and post korte pari but amader specify kore dite hobe method konta app.get() or app.post() -->
+    <!-- ** Video 4(Display POST data and explain Request and response Model) -->
+    <!-- ? Posted data ui te dekhate chaile amra just amader state ta update kore dibo  -->
+    <!-- ? req and res holo 2 ta huge object eder vitor onek kisu ase console.lag(req,res) likhle bujhte parba amra eikhane params,query eishob dekhsi -->
+    <!-- ?  http://localhost:15000/?name=%22has%22&age=20 -> question mark er port key = value hisabe params thake r http://localhost:15000/2 params.id hisdbe id thake -->
+    <!-- ** Video 5 (What is Database, DBMS, MongoDB, NoSQL vs SQL) -->
+    <!-- ? Amader j current system er server ta ase oikhane amra  data push kortesi but kono karone amader server ta jodi stop hoye jai , oi data haray jasse -->
+    <!-- ? Ei tar reason holo oi data gula stored na , ai problem er 2 ta solutions ase  -->
+    <!-- ? 1. amra amader node project ei data read write kore data.json format a rekhe dite pari  -->
+    <!-- ? But ei tar oshubidha holo amra high volume er data jodi rakhi tahole amade scalibility and data manage + query korte jhamela bedhe jabe i mean manage kora easy na -->
+    <!-- ? Ekhon ei prob er solution ki ? eikhane 2 ta popular solutions ase 1. SQL (Structured query language) 2. NOSQL (non-structured query language) -->
+    <!-- ? SQL vs NOSQL -->
+    <!-- ? 1. Sql holo structured or tabular -> table akare data rakhe -> onek table thakte pare -> table gular moddhe abar id diye relation stablish kora jai  -->
+    <!-- ? ei jonno eitake relational db bole -> data manipuation flexiable na -> primary key and foreign key diye table er majhe somporko kora lage ->  -->
+    <!-- ? Popular options 1.postgress,2.MySQL 3. SQlite -->
+    <!-- ? Onno dike amader NOSQL -> easy to maintain , high volume er data rakha jai, highly flexible  -->
+    <!-- ? Array of object akare data thake -> easily scale out kora jai  -->
+    <!-- ? JS er object er moto kore key:value pair hisabe data thake -->
+    <!-- ** Example -> MongoDB ,  graphQL -->
+    <!-- ** Video 6 (Create mongodb atlas account and Connect to database) -->
+    <!-- ? Mongo db atlas Connected in the backend server  -->
+    <!-- ? We're using mongo db and aws provider -->
+    <!-- ** Video 7 (Send data to database using mongodb insertOne) -->
+    <!-- ? relavant doc -> https://www.mongodb.com/docs/drivers/node/current/usage-examples/findOne/ -->
+    <!-- ? Amra mongo db te data pathayte chaile ki korbo -->
+    <!-- ? mongoDb client + uri 2 ta jinish lagbe -->
+    <!-- ? er por async function run(){
+        try{
+            const userDb = client.db("userCollections")
+            const userCollection = userDb.collection("users");
+            const userObj = {
+                name:'has',
+                email : "kamrul@gmail.com"
+            }
+            const result = await userCollection.insertOne(userObj)
+            <!-- ** insertedId hisabe id bosay change kore dite parbo -->
+    } finally{
+    <!-- ** oder moto close kore dibo na -->
+    } } -->
+    <!-- ** calling run().catch((err)=> console.lag(err)) -->
+    <!-- ** Video 8 (Module summary and find operation to load data) -->
+    <!-- ? Module summary and the find() operation -> data db theke niye client a dekhano -->
+    <!-- ? try{ er vitor app.get('/users', async (req,res)=> const cursor = userCollection.find({})) -> const users = await cursor.toArray()} -->
+    <!-- ** Vide0 9 ((optional) instal and use Mongodb and compass offline) -->
+    <!-- ? MongoDb compass for offline use? -->
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-65</title>
+  </head>
+  <body>
+    <!-- ** Video 1 (Module Overview, Async Await, Try Catch) -->
+    <!-- ? serverside and client side cretaed and try catch and finally recaped-->
+    <!-- ** Video 2 ( (Recap) Mongodb And Send User Data To The Server) -->
+    <!-- ? conneting the server with the mongodb atlas db -->
+    <!-- ** Video 3 (Get User Data From Client Side Using Multi Field Form State) -->
+    <!-- ? Simple CURD er Create operation dekhaono hoise -->
+    <!-- ? Step 1 . data client side theke niye amra -> post method use kore server a pathabo  -->
+    <!-- ? Step 2. server a app.post() method use kore data ta receive kore database a pathay dibo -->
+    <!-- ? Step 3. const result => await collectionName.insertOne(je data ashbe oita) -->
+    <!-- ? Step 4. data jawar por ekta response client k pathay dilam like res.send(result) -->
+    <!-- ** 3 tier -> 1.client 2.Server 3.DB -->
+    <!-- ** Video 4 (Save Data From React Client Side To Mongo Database) -->
+    <!-- ? saving data via server to db using -> post method similar to get same but fetch takes an {} as an parameter -->
+    <!-- ** Video 5 (Load And Display Data From Database, Create Delete Button) -->
+    <!-- ? Read data from the database -> step 1 . get data from the database to the server using the cursor -> userColection.find(query -> {}) , const users = await cursor.toArray() ,step 2. send that data as response from server to client -->
+    <!-- ** Video 6 (Delete A User From The Database And Show Remaining Users) -->
+    <!-- ? Delete operation shown using the id as query parameter, client side method : "DELETE", server side app.delete -->
+    <!-- ? const query = {_id : ObjectId(req.params.id)} -->
+    <!-- ** user deleted + shown on the ui -->
+    <!-- ** Video 7 ( Load Single Item By Id And Update User Info) -->
+    <!-- ? 1. step-1 . je data take update korbo oita k as single get kora lagbe like userColection.findOne(query), id wala url a hit korle const query = {_id : ObjectId(req.params.id)} bole dite hobe   -->
+    <!-- ? er por oi data amra client a pabo  -->
+    <!-- ? oita diye form the update er jonno populate kore felbo  -->
+    <!-- ** put the data in the server and then we need 3 things const query = {}, const document = {$set={} ja ja filed update korbo updated object} option={} -> const result = await userColection.updateOne(query/filter,document,option) -->
+    see doc -->
+    <!-- ** Module Summary -> te interview question ase ogla dekho and solve likhte hobe -->
+  </body>
+</html>
