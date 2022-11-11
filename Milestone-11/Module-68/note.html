@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-68</title>
+  </head>
+  <body>
+    <!-- ** Video 1 ( Module Overview and set simple ema-john server) -->
+    <!-- ? ema-jhon er jonno amra server banabo + mongodb user and passsword create kore connect korbo -->
+    <!-- ** Video 2 (Add data from JSON to database and load on the UI) -->
+    <!-- ** data insert on the db and access it from the server make an api end point and finally show it to the ui -->
+    <!-- ** Video 3 ( Introduction to pagination and pagination concept) -->
+    <!-- ? fixing the id -> _id conversion in every code space and introduction to pagination -->
+    <!-- ?  Important for pagination   -->
+    <!-- ? Total amount of data -->
+    <!-- ? Want to show how many in per page  -->
+    <!-- ? total/perpageamountofdata -> celi that output and that output will be your number of pages -->
+    <!-- ? Kon page a data koto theke start hobe -> page index * perpageamountofdata  -->
+    <!-- ** Video 4 ((Interesting) Load item count and get page count) -->
+    <!-- ? amra backend e data limit korte pari chaile const data = await cursor.limit(5).toArray() -->
+    <!-- ? amra kono api end point er against a db te koto gula data ase ta pete chaile   -->
+    <!-- ? const count = await productCollection.extimatedDocument(); -->
+    <!-- ** Pagination -->
+    <!-- ? Suppose amar ekta array te 5 ta upadan dorker -> Array() -> tahole o 5 ta undefined data soho amader ekta array dibe -->
+    <!-- ? [...Array(5)] -> [undefined , undefined, undefined, undefined , undefined] -->
+    <!-- ? ei data gular index pete chaile amra [...Array(5).keys()] -> index gula diye dibe-->
+    <!-- ** Vide0 5 (Create pagination button and set Page) -->
+    <!-- ? Pagination a amader koyekta jinish lage  -->
+    <!-- ? 1. amader toatal data koto  -->
+    <!-- ? 2. per page koita data dekhaite chai -->
+    <!-- ? 3. total number of pages -> Math.celi(totaldatacount/perpage data) -->
+    <!-- ? 4. page number button kivabe banabo -> [...Array(totalnumber of pages).keys()].map(number=> <button></button>) -->
+    <!-- ? 5. kon button select kortesi ta korar jonno amra -> button a onClick(()=> setCurrentPage(number)) -->
+    <!-- ? 6. jodi number === currentPage && "selected"  -->
+    <!-- **Video 6(Set Page and Size state and send search query to server) -->
+    <!-- ? we created a select and option -> je khane amra per page koto gula data dekhte chai ta bolte parbo and oi onujaye amader page number gula automatic change hoye jabe  -->
+    <!-- ? data load korar sumoy amra query hisabe kon page a asi and koita data load korte chai oita query parameter hisabe send kore dibo -->
+    <!-- ? And oi onujayi data load korbo -->
+    <!-- ** Video 7( (Interesting) Load data based on the page number and size)  -->
+    <!-- ? kon page a asi and per page a koita kore data dekhaite chai oitar upor base kore amra -> page wise data load korsi  -->
+    <!-- ? eita korar jonno amra query parameter use korsi  -->
+    <!-- ? r client side a useEffect diye data load korar time a  dependencies list hisabe -> currentPage at and number of data per page k use korsi -->
+    <!-- ? ei 2 tar kono ta change korle api hit kore olpo olpo data ene amra ui te dekhaisi -->
+    <!-- ** Video 8 ((Interesting) Load data based on the page number and size) -->
+    <!-- ? ei j upore olpo olpo data load korte giye amader j problem ta hoise -> amra j cart a product add kortesi oita thik moto update hosse na -->
+    <!-- ? bcz er age amra shob products load kore id diye localStorage theke quantity ber kore cart er calculations kortam  -->
+    <!-- ? ei jonno amra ekhon j page a oi page a thakle sudhu oi page a load neya products er against a amader cart calculations dekhasse -->
+    <!-- ? ei problem kivabe solve korbo -->
+    <!-- ? Amra amader localstorage e thaka stored cart theke shob ids gula Object.keys(storedCart) theke niye nibo -->
+    <!-- ? Ekta post request kore server a pathay dibo -->
+    <!-- ? Server the database k bolbo ei id er agaiinst a thaka data gula ekta array te vore amk dau -->
+    <!-- ? Ekhon sei array diye cart er theke quantity niye quantity update kore dibo  -->
+    <!-- ? const ids = req.body; -> const objectIds = ids.map(id=>ObjectId(id)) -->
+    <!-- ? const query = { _id(field ta dite hobe):{$in: objectIds } }  -->
+    <!-- ? const cursor = productCollection.find(query) -->
+    <!-- ? const productsData = await cursor.toArray() -> res.send(productsData) -->
+    <!-- ? kaj sesh -->
+    <!-- ** Video 9 ((Conceptual) How Pagination works) -->
+    <!-- ? This is the summary of whole module -> eita dekhlei baki shob jaigai ki ki korsi shob kisur idea pabo -->
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-69</title>
+  </head>
+  <body>
+    <!-- ** Video 1 (Module Introduction Project setup) -->
+    <!-- ? Project overview genius car  -->
+    <!-- ? Developer 3 things -->
+    <!-- ? 1. Known 20-30% 2.forgotten 30-40% 3 . never explored 30-40% -->
+    <!-- ? You have to have  1.Courage 2. Patience 3. Curious -->
+    <!-- ? Explore and practice -->
+    <!-- ** Video 2 (Auth redirect after successful login) -->
+    <!-- ? Login redirection and Private routes -->
+    <!-- ** Vide0 3 (Filter orders info by email address Introduction JWT token) -->
+    <!-- ? 1. Just created new orders here and a introduction to JWT  -->
+    <!-- ** But amader problem holo amra jodi amader orders er email ta ke hit kori jekono jaiga theke amra onno r ekjon er data access korte partesi which is not secured -->
+    <!-- ? 2. Basic website er 2 ta part ase 1. Authentication 2. Authorization -->
+    <!-- ? 3. Kono user jokhon tar credentials diye nijeke authenticated kore as a valid user tokhon server take ekta token JWT dei as he is a valid user -->
+    <!-- ? 4. Ei token ta server theke client a ashar port client er 2 ta jaigai save kore rakha jai 1. Browser cookie(http coikie only) (comparatively secured) 2. localstorage -->
+    <!-- ? 5. Ei JWT te 3 ta part thake 1. Header (info about user) 2. Payload(Main data info) 3. Signeture (security sign) -->
+    <!-- ? 6. Ekhon user jokhon kono api er kase data chai server ei JWT jete encripted seita decrepted kore shob kisu thik thakle user k data dei otherwise dei na -->
+    <!-- ** Video 4 ( How does JWT token works and create access token secret) -->
+    <!-- ? JWT token kivabe kaj kore -> User Authenticate howar por server user k 2 ta jinish provide kore  -->
+    <!-- ? 1.Access token (Short time validity) 2. Refresh Token (Long time validity) -->
+    <!-- ? Er por client jokhon ei JWT token er access token ta diye server er kase data chai tokhon server ei token ta decrepted kore client k data provide kore -->
+    <!-- ? Jodi access token invalid or expire hoi tahole data dibe na -->
+    <!-- ? Jodi access token expire hoi tahole server k refresh token dile se immidietly user k abar ekta access token diye dibe -->
+    <!-- ? Jodi refresh token to expire hoi tahole client k server bolbe abar credentials diye login kore refresh and access token nau -->
+    <!-- ? JWT token store kora hoi client side a 2 ta jaigai 1.localstorage (less secure) XSS -> cross site scripting kore token er access niye neya jai -->
+    <!-- ? 2. Browser cookie (Http cookie only) -->
+    <!-- ** Video 5 (Create JWT Token, Get jwt token on client side) -->
+    <!-- ? const token = jwt.sign(1st jinish dibo Payload -> je data ta server a send korte chai as main info, secret -> process.env.ACCESS_TOKEN_SECRET,{expireIn : '1hr'})  -->
+    <!-- ? So client side theke user authenticated howar login hole post payload er data hisabe amra user er email ta backend a pathay dibo -->
+    <!-- ? user email info post theke amra body theke access kore niye payload hisabe use korbo  -->
+    <!-- ? Lastly server theke token ta amra {token} object akare pathay dibo -->
+    <!-- ** Video 6 ( (advanced) Send jwt token in the server, verify and decode jwt token) -->
+    <!-- ? Ei khane amra orders er email query diye j api ta hit kortesilam oitar headers a  -->
+    <!-- ? {headers : "authorization" : `Bearer ${localStorage.getItem("geniusToken")}`} -->
+    <!-- ** Ekhon server side a amra -> jekhane oi email query er order er api ta hit kortesi oikhane dekho jinish ta thik moto passi kina -->
+    <!-- ? console.log(req.headers.authorization) -->
+    <!-- ? Ekhon amra ekta function likhbo to verify the jwt token -->
+    <!-- ? ei spacial function ta 3 ta parameter nei -> const verifyJwt = (req,res,next)=>{const authHeaders = req.headers.authorization, if(!authHeaders)-> access denaied} -> const token = authHeaders.split(' ')[1] -->
+    <!-- ? token pawar port amra jwt verify korbo jwt.verify(token,ACCESS_TOKEN_SECRET,(err,decoded)=> err hole -> access nai , req.decoded = decoded -> er por amader obossoi next() call kore dite hobe) -->
+    <!-- ** Video 7 ((Recap) JWT token verify and Handle 401, 403 to log out user) -->
+    <!-- ? ager tar recap + ei khane amra ekta jinish check korbo -> ami valid user and amar token ase but ami onno user er information chassi -->
+    <!-- ? ei jonno amra req.decoded = decoded -> er vitor decoded information (oi j payload e j info disilam oita pabo) -->
+    <!-- ? ekhon orders er api theke oi decoded info k niye (decoded.email !== req.query.email) -> tahole amra bolbo res.status(403) -> unauthorised access -->
+    <!-- ** er por amra amader client side a satus code er upor depen kore user jodi 401 or 403 status khay tahole take logOut kore dibo -->
+    <!-- ** Vide0 8 ( Module Summary) -->
+    <!-- ** 1. Jokhon user logout hoye jabe amra jwt token ta localStorage theke remove kore dibo -->
+    <!-- ** 2. j j api k secure korte chai tader k call korar somoy or vrifyJwt use korte chaile obossoi headers : {authorization : `Bearer ${lS token getItem}`} kore pathay dite hobe -->
+  </body>
+</html>

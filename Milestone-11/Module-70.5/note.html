@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 70.5</title>
+  </head>
+  <body>
+    <!-- ** Video 1 ( Genius car Sort by price (sorting does not work)) -->
+    <!-- ? Ascending and descending sorting done -->
+    <!-- ? -> const cursor = collection.find(query) -->
+    <!-- ? const products = await cursor.toArray().sort({field : -1}) -> -1 descending 1 Ascending  -->
+    <!-- ? String sort korle ja ase tai rakhlei hobe and number sort korte chaile obossoi as a number db te store korte hobe -->
+    <!-- ** Video 2 (Genius car find products between price range 100 to 300) -->
+    <!-- ? Sorting obossoi find er sathe eki line e korte hobe  -->
+    <!-- ? And gt and lt or gte , lte egla implement korte chaile const query = { jefieldervaluemodified hobe field : {$lt : 100, $gt : 300} } -->
+    <!-- ** Video 3 ( Other Mongodb logical operators and, or, not) -->
+    <!-- ? $gt $lt $gte $lte $ne $in to use logical operators -> const query = { $and : [{$gte : 20},{$lte : 200}]}  -->
+    <!-- ** Video 4 (Indexing and text search in mongodb) -->
+    <!-- ? 1. Search korte gele first task holo -> mongo db efficiently search korte gele indexing use kore -->
+    <!-- ? 2. Like amra amader genius car project a title diye search korbo  -->
+    <!-- ? Tai mongo db te giye 1st amader bolte hobe ki diye search korbo tar ekta index banay dite hobe -->
+    <!-- ? index a giye create index {"field" : "type ki -> ex -text"} -->
+    <!-- ? Ekhon server side theke query = {$text(type ta bolte hobe first) : {$search: kon text ta search korbe oita}} -->
+    <!-- ? Eivabe korle mongo db index er maddhome binary search use kore data ta efficiently search kore niye ashbe -->
+  </body>
+</html>
