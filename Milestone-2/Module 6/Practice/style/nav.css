@@ -1,0 +1,55 @@
+header nav ul li {
+  list-style: none;
+  padding: 10px 30px;
+  position: relative;
+}
+
+header nav ul li:hover {
+  background-color: beige;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+header nav ul:not(.dropdown) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.dropdown {
+  display: none;
+}
+
+header nav ul li:hover ul {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 35px;
+}
+
+header nav ul li ul > li {
+  margin: 0;
+  padding: 20px;
+}
+
+#block {
+  display: none;
+}
+
+.dropdown li {
+  position: relative;
+}
+
+.dropdown li:hover #block {
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: 0;
+}

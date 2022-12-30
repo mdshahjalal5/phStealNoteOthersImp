@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exploring grid</title>
+    <style>
+      :root {
+        --box-1-color: blue;
+        --box-2-color: green;
+        --box-3-color: red;
+        --box-4-color: yellow;
+        --box-5-color: magenta;
+        --box-6-color: purple;
+        --text-color: black;
+      }
+      .grid-container {
+        border: 1px solid lightblue;
+        padding: 0.5em;
+        height: 700px;
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 200px 200px;
+        gap: 20px;
+        justify-content: center;
+        align-content: center;
+      }
+      .item {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        color: var(--text-color);
+      }
+      #item-1 {
+        background-color: var(--box-1-color);
+      }
+      #item-2 {
+        background-color: var(--box-2-color);
+      }
+      #item-3 {
+        background-color: var(--box-3-color);
+      }
+      #item-4 {
+        background-color: var(--box-4-color);
+      }
+      #item-5 {
+        background-color: var(--box-5-color);
+      }
+      #item-6 {
+        background-color: var(--box-6-color);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exploring Grid</h1>
+    <div class="grid-container">
+      <div id="item-1" class="item">item-1</div>
+      <div id="item-2" class="item">item-2</div>
+      <div id="item-3" class="item">item-3</div>
+      <div id="item-4" class="item">item-4</div>
+      <div id="item-5" class="item">item-5</div>
+      <div id="item-6" class="item">item-6</div>
+    </div>
+  </body>
+</html>

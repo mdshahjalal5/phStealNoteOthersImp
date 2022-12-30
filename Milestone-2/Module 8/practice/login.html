@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f43c8ff667.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .nav-container {
+        display: flex;
+        justify-content: space-between;
+        background-color: aliceblue;
+        padding: 1em;
+        margin: 0;
+      }
+      .nav-container a {
+        text-decoration: none;
+        margin-right: 1em;
+        color: black;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: "Edu QLD Beginner", cursive;
+      }
+      .login-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80vh;
+      }
+      .login-form {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+      }
+      .login-form h1 {
+        text-align: center;
+        font-family: "Edu QLD Beginner", cursive;
+      }
+      .login-form input {
+        margin-top: 20px;
+        padding: 10px 10px;
+        border: none;
+        background-color: lightgreen;
+        border-radius: 0.5em;
+        font-size: 1em;
+        font-weight: 500;
+      }
+
+      .login-form input[type="submit"] {
+        background-color: lightblue;
+        padding: 10px;
+        border-radius: 0.5em;
+        color: darkblue;
+        font-size: 1.5em;
+        font-weight: 700;
+      }
+      .login-form input[type="submit"]:hover {
+        background-color: rgb(130, 189, 209);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-container">
+        <span>
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Dashboard</a>
+          <a href="">Inventory</a>
+        </span>
+        <span>
+          <a href=""><i class="fa-solid fa-user"></i></a>
+          <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
+        </span>
+      </nav>
+    </header>
+    <section class="login-container">
+      <form class="login-form">
+        <h1>Log In</h1>
+        <input type="email" name="email id="email" placeholder="Enter Email"
+        required>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          required
+        />
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+  </body>
+</html>

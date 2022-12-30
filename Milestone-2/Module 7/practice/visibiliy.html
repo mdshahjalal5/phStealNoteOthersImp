@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visibility</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+      }
+      .boxes {
+        display: flex;
+      }
+      #box-1 {
+        background-color: lightgrey;
+        /* display: none; // * display none dile content jaiga 2 tai gayeb hoye jabe */
+      }
+      #box-2 {
+        background-color: salmon;
+      }
+      #box-3 {
+        background-color: rebeccapurple;
+        /* visibility: hidden; // visibility hidden dile content dekhabe na but jaiga thakbe */
+      }
+      #box-4 {
+        background-color: palegreen;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="boxes">
+      <div class="box" id="box-1">1</div>
+      <div class="box" id="box-2">2</div>
+      <div class="box" id="box-3">3</div>
+      <div class="box" id="box-4">4</div>
+    </main>
+  </body>
+</html>
